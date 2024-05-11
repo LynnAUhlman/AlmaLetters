@@ -82,8 +82,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 </td>
               </tr>
              </table>
-<p>Kindly return the materials or renew any eligible materials online in <a href="https://maine.primo.exlibrisgroup.com/discovery/search?vid=01MAINE_INST:01MAINE_INST">LibrarySearch</a>. Please reach out to your campus library for assistance.</p>				
-
+<p>Kindly return the materials or renew any eligible materials online using <a href="https://maine.primo.exlibrisgroup.com/discovery/search?vid=01MAINE_INST:01MAINE_INST">LibrarySearch</a>. Please reach out to your campus library for assistance.</p>				
+<p><strong>How to renew:</strong> </p>
+<ul>
+<li><p><em>Not signed in:</em> Select <strong>Sign in</strong> and follow the prompts to sign in. Select <strong>Menu>My Loans</strong>. Click the box next to each item you wish to renew and then click <strong>Renew Selected</strong>.</p></li>
+<li><p><em>Already signed in:</em> Click your name from the top right corner and then click <strong>My Loans</strong>. Click the box next to each item you wish to renew and then click <strong>Renew Selected</strong>.</p></li>
+</ul>
+	<p></p>
           </div>
         </div>
        <!-- footer.xsl -->
