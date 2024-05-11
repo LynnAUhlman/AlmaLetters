@@ -44,7 +44,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<strong>@@short_loans_message@@</strong>
 					</xsl:if>
 					<xsl:if test="notification_data/short_loans='false'">
-						@@message@@  item(s) due soon.
+						@@message@@
 					</xsl:if>
 					<br/><br/>
                 </td>
@@ -63,7 +63,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						</xsl:attribute>
 						<tr>
 							<th>@@title@@</th>
-							<th>@@description@@</th>
 							<th>@@author@@</th>
 							<th>@@due_date@@</th>
 							<th>@@library@@</th>
@@ -72,7 +71,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 		<xsl:for-each select="notification_data/item_loans/item_loan">
 						<tr>
 							<td><xsl:value-of select="title"/></td>
-							<td><xsl:value-of select="description"/></td>
 							<td><xsl:value-of select="author"/></td>
 							<td><xsl:value-of select="due_date"/></td>
 							<td><xsl:value-of select="library_name"/></td>
@@ -84,8 +82,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 </td>
               </tr>
              </table>
-				<br />
-				<br />
+<p>Kindly return the materials or renew any eligible materials online in <a href="https://maine.primo.exlibrisgroup.com/discovery/search?vid=01MAINE_INST:01MAINE_INST">LibrarySearch</a>. Please reach out to your campus library for assistance.</p>				
 
           </div>
         </div>
@@ -100,4 +97,3 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </html>
   </xsl:template>
 </xsl:stylesheet>
-
