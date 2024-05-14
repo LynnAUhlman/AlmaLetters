@@ -31,13 +31,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:call-template name="generalStyle" />
 			</head>
 			<body>
-				<xsl:attribute name="style">
-				<xsl:call-template name="bodyStyleCss" /> <!-- style.xsl -->
-			</xsl:attribute>
-				<xsl:call-template name="head" /> <!-- header.xsl -->
-				<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
-	  				<div class="messageArea">
+        <xsl:call-template name="generalStyle" />
+      </head>
+      <body>
+        <xsl:attribute name="style">
+          <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
+        </xsl:attribute>
+
+        <xsl:call-template name="head" /><!-- header.xsl -->
+
+		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
+        <div class="messageArea">
             <table role='presentation'  cellspacing="0" cellpadding="5" border="0">
+				<tr>
+					<td>@@your_request@@.</td>
+				</tr>
+				<tr>
+					<td>@@your_request@@.</td>
+				</tr>
 				<tr>
 					<td>@@your_request@@.</td>
 				</tr>
