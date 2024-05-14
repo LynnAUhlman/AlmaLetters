@@ -41,7 +41,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
         <div class="messageArea">
 		<div class="messageBody">
-				<br />
 
 		<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 				<tr>
@@ -86,9 +85,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		        </xsl:if>
 				<h><strong>@@please_settle@@</strong></h>
 
-						<br />
-	</div>
-</div>
+				<br />
+				<br />
+				<table role='presentation' >
+						<tr><td>@@sincerely@@</td></tr>
+						<tr><td>@@department@@</td></tr>
+				</table>
+				</table>
+				<br />
+        </div>
+    </div>
 	         <!-- footer.xsl -->
 	         <!-- xsl:call-template name="reachoutSalutation" -->
         <xsl:call-template name="attentionSalutation" />
@@ -100,4 +106,3 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </html>
   </xsl:template>
 </xsl:stylesheet>
-	  
