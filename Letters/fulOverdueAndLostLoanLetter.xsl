@@ -38,10 +38,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
-
         <div class="messageArea">
 			<div class="messageBody">
-
 
 				<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 				<tr>
@@ -52,7 +50,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				</tr>
 				</table>
 
-				<table role='presentation'  cellpadding="5" class="listing">
+				<table role='presentation' cellpadding="5" class="listing">
 					<xsl:attribute name="style">
 						<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
 					</xsl:attribute>
@@ -66,8 +64,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 									</xsl:attribute>
 									<tr align="center" bgcolor="#f5f5f5">
 										<td colspan="8">
-											<h3><xsl:value-of select="organization_unit/name" /></h3>
-										</td>
+                                <h3 style="padding: 1px; margin: 0.5em; font-size: 18px;"><xsl:value-of select="organization_unit/name" /></h3>										</td>
 									</tr>
 									<tr>
 										<th>@@lost_item@@</th>
@@ -109,14 +106,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							</td>
 						</tr>
 					</xsl:if>
-			</table>		
-					<br />
+			</table>
 					<br />
 					@@additional_info_1@@
 					<br />
 					@@additional_info_2@@
 					<br />
-
 	  	</div>
 </div>
 	  <!-- footer.xsl -->
