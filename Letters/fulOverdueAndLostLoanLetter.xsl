@@ -38,9 +38,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
+
         <div class="messageArea">
-		<div class="messageBody">
-			
+			<div class="messageBody">
+
+
 				<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 				<tr>
 				<td>
@@ -98,7 +100,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 								</table>
 							</td>
 						</tr>
-						<hr/><br/>
 					</xsl:for-each>
 					<xsl:if test="notification_data/overdue_notification_fee_amount/sum !=''">
 						<tr>
@@ -108,6 +109,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							</td>
 						</tr>
 					</xsl:if>
+			</table>		
 					<br />
 					<br />
 					@@additional_info_1@@
@@ -115,19 +117,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					@@additional_info_2@@
 					<br />
 
-					<table role='presentation' >
-						<tr><td>@@sincerely@@</td></tr>
-						<tr><td>@@department@@</td></tr>
-					</table>
-				</table>
-				<br />
-	</div>
+	  	</div>
 </div>
-
-		<!-- footer.xsl -->
-	         <!-- xsl:call-template name="reachoutSalutation" -->
-        <xsl:call-template name="attentionSalutation" />
-        <xsl:call-template name="salutation" />
+	  <!-- footer.xsl -->
+	    <!-- xsl:call-template name="reachoutSalutation" -->
+	    <xsl:call-template name="attentionSalutation" />
+	    <xsl:call-template name="salutation" />
 	    <xsl:call-template name="last1Footer" />
 	    <xsl:call-template name="last2Footer" />
 
@@ -135,4 +130,3 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </html>
   </xsl:template>
 </xsl:stylesheet>
-	  
