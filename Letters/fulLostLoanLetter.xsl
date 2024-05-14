@@ -40,7 +40,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
         <div class="messageArea">
-
+		          <div class="messageBody">
 				<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 				<tr>
 				<td>
@@ -49,11 +49,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				</td>
 				</tr>
 				</table>
+				<br></br>
 
 				<table cellpadding="5" class="listing">
 				<xsl:attribute name="style">
 					<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
 				</xsl:attribute>
+				</table>
 
 				<xsl:for-each select="notification_data">
 				<table role='presentation' >
@@ -75,12 +77,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<br />
 						<strong>@@call_number@@ :</strong><xsl:value-of select="phys_item_display/call_number"/>
 						<br />
+												<br />
+
 						<strong>@@charged_with_fines_fees@@ </strong>
 						</td>
 					</tr>
 				</table>
 				</xsl:for-each>
-
+<br></br>
 				<table role='presentation'  cellpadding="5" class="listing">
 				<xsl:attribute name="style">
 					<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
@@ -97,14 +101,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<td><xsl:value-of select="ff"/></td>
 					</tr>
 					</xsl:for-each>
-
 				</table>
-				<br />
 				<br />
 				@@additional_info_1@@
 				<br />
 				@@additional_info_2@@
-				<br />
+				
+	  	</div>
+</div>				
 	         <!-- footer.xsl -->
 	         <!-- xsl:call-template name="reachoutSalutation" -->
         <xsl:call-template name="attentionSalutation" />
@@ -116,4 +120,3 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </html>
   </xsl:template>
 </xsl:stylesheet>
-	  
