@@ -39,6 +39,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
         <div class="messageArea">
+		<div class="messageBody">
 				<br />
 
 
@@ -123,7 +124,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				</table>
 				<br />
 	</div>
-	         <!-- footer.xsl -->
+</div>
+
+		<!-- footer.xsl -->
 	         <!-- xsl:call-template name="reachoutSalutation" -->
         <xsl:call-template name="attentionSalutation" />
         <xsl:call-template name="salutation" />
