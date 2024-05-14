@@ -39,7 +39,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
         <div class="messageArea">
-				<br />
+            		          <div class="messageBody">
 
 				<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 				<tr>
@@ -75,6 +75,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						<br />
 						<strong>@@call_number@@ :</strong><xsl:value-of select="phys_item_display/call_number"/>
 						<br />
+						<br />
 						<strong>@@charged_with_fines_fees@@ </strong>
 						</td>
 					</tr>
@@ -100,20 +101,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 				</table>
 				<br />
-				<br />
 				@@additional_info_1@@
 				<br />
 				@@additional_info_2@@
-				<br />
-				<table role='presentation' >
-
-						<tr><td>@@sincerely@@</td></tr>
-						<tr><td>@@department@@</td></tr>
-
 				</table>
-				</table>
-				<br />
-
+	  	</div>
+</div>
 	         <!-- footer.xsl -->
 	         <!-- xsl:call-template name="reachoutSalutation" -->
             <xsl:call-template name="attentionSalutation" />
