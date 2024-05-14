@@ -42,16 +42,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <div class="messageArea">
 		<div class="messageBody">
 
-		<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
-				<tr>
-				<td>
-					<h>@@dear@@ </h> <br />
-					<h>@@we_would_like@@ <xsl:value-of select="notification_data/organization_unit/name"/> @@debt_of@@ <strong><xsl:value-of select="notification_data/total_fines_amount"/>
-					&#160;<xsl:value-of select="notification_data/total_fines_currency"/></strong></h>
-				</td>
-				</tr>
-				</table>
-
 				<table role='presentation'  cellpadding="5" class="listing">
 				<xsl:attribute name="style">
 					<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
@@ -62,9 +52,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
 				</xsl:attribute>
 					<tr>
-						<th>@@fee_type@@</th>
-						<th>@@fee_amount@@</th>
-						<th>@@note@@</th>
+						<th>@@lost_item@@</th>
+						<th>@@description@@</th>
+						<th>@@library@@</th>
+						<th>@@loan_date@@</th>
+						<th>@@due_date@@</th>
+						<th>@@barcode@@</th>
+						<th>@@call_number@@</th>
+						<th>@@charged_with_fines_fees@@</th>
 					</tr>
 					<xsl:for-each select="notification_data/fines_fees_list/user_fines_fees">
 					<tr>
