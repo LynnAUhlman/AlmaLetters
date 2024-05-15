@@ -14,143 +14,83 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:variable name="isDeposit" select="/notification_data/request/deposit_indicator" />
   <xsl:variable name="isDigitalDocDelivery" select="/notification_data/digital_document_delivery" />
 
-  <xsl:template match="/">
+<xsl:template match="/">
     <html>
-			<xsl:if test="notification_data/languages/string">
-				<xsl:attribute name="lang">
-					<xsl:value-of select="notification_data/languages/string"/>
-				</xsl:attribute>
-			</xsl:if>
+        <xsl:if test="notification_data/languages/string">
+            <xsl:attribute name="lang">
+                <xsl:value-of select="notification_data/languages/string"/>
+            </xsl:attribute>
+        </xsl:if>
 
-      <head>
-				<title>
-					<xsl:value-of select="notification_data/general_data/subject"/>
-				</title>
+        <head>
+            <title>
+                <xsl:value-of select="notification_data/general_data/subject"/>
+            </title>
+            <xsl:call-template name="generalStyle" />
+        </head>
+        <body>
+            <xsl:attribute name="style">
+                <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
+            </xsl:attribute>
+            <xsl:call-template name="head" /><!-- header.xsl -->
+            <xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
-        <xsl:call-template name="generalStyle" />
-      </head>
-      <body>
-        <xsl:attribute name="style">
-          <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
-        </xsl:attribute>
-
-        <xsl:call-template name="head" /><!-- header.xsl -->
-
-		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
-
-        <div class="messageArea">
-          <div class="messageBody">
-
-            <table role='presentation' cellspacing="0" cellpadding="5" border="0">  
-                  <tr>
-                    <td>
-                        <h>@@message@@</h>
-                    </td>
-                  </tr>
-                  
-                  <tr>
-                    <td>
-                        <h>@@following_items_awaiting_pickup@@</h>
-                    </td>
-                  </tr>
-
-                  <xsl:for-each select="notification_data/requests_by_library/library_requests_for_display">
+            <div class="messageArea">
+                <div class="messageBody">
+                    <table role='presentation' cellspacing="0" cellpadding="5" border="0">
                         <tr>
                             <td>
-                                <table cellpadding="5" class="listing">
-                                    <xsl:attribute name="style">
-                                        <xsl:call-template name="mainTableStyleCss" />
-                                    </xsl:attribute>
-                                    <tr align="center" bgcolor="#f5f5f5">
-                                        <td colspan="4">
-                                            <h3><xsl:value-of select="organization_unit/name" /></h3>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>@@title@@</th>
-                                        <th>@@author@@</th>
-                                        <th>@@call_number@@</th>
-                                        <th>@@can_picked_at@@</th>
-                                        <th>@@note_item_held_until@@</th>
-                                    </tr>
-
-                                    <xsl:for-each select="notification_data/out_of_institution_requests/request_for_display">
-                                        <tr>
-                                            <td><xsl:value-of select="phys_item_display/title"/></td>
-                                            <td><xsl:value-of select="phys_item_display/author"/></td>
-                                            <td><xsl:value-of select="phys_item_display/call_number"/></td>
-                                            <td><xsl:value-of select="request/assigned_unit_name"/></td>
-                                            <td><xsl:value-of select="request/work_flow_entity/expiration_date"/></td>
-                                        </tr>
-                                    </xsl:for-each>
-                                </table>
+                                <h>@@message@@</h>
                             </td>
                         </tr>
-                        <br/>
-                    </xsl:for-each>
-                    
-                    <xsl:if test="notification_data/out_of_institution_requests/request_for_display">
                         <tr>
                             <td>
-                                <table cellpadding="5" class="listing">
-                                    <xsl:attribute name="style">
-                                        <xsl:call-template name="mainTableStyleCss" />
-                                    </xsl:attribute>
-                                    <tr align="center" bgcolor="#f5f5f5">
-                                        <td colspan="4">
-                                            <h3>@@other_institutions@@</h3>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>@@title@@</th>
-                                        <th>@@author@@</th>
-                                        <th>@@call_number@@</th>
-                                        <th>@@can_picked_at@@</th>
-                                        <th>@@note_item_held_until@@</th>
-                                    </tr>
-
-                                    <xsl:for-each select="notification_data/out_of_institution_requests/request_for_display">
-                                        <tr>
-                                            <td><xsl:value-of select="phys_item_display/title"/></td>
-                                            <td><xsl:value-of select="phys_item_display/author"/></td>
-                                            <td><xsl:value-of select="phys_item_display/call_number"/></td>
-                                            <td><xsl:value-of select="request/assigned_unit_name"/></td>
-                                            <td><xsl:value-of select="request/work_flow_entity/expiration_date"/></td>
-                                        </tr>
-                                    </xsl:for-each>
-                                </table>
+                                <h>@@following_items_awaiting_pickup@@</h>
                             </td>
                         </tr>
-                        <br/>
-                    </xsl:if>
-                    
-                    <xsl:if test="notification_data/user_for_printing/blocks != ''">
-                        <tr>
-                            <td><b>@@notes_affect_loan@@:</b></td>
-                        </tr>
-                        <tr>
-                            <td><xsl:value-of select="notification_data/user_for_printing/blocks"/></td>
-                        </tr>
-                    </xsl:if>
-                  
-            </table>
-      
-            <br />
-            <table role='presentation' >
-                <tr><td>@@sincerely@@</td></tr>
-                <tr><td>@@department@@</td></tr>
-            </table>
-          </div>
-        </div>
+                    </table>
+                </div>
+            </div>
 
-	  <!-- footer.xsl -->
-	    <!-- xsl:call-template name="reachoutSalutation" -->
-	    <xsl:call-template name="attentionSalutation" />
-	    <xsl:call-template name="salutation" />
-	    <xsl:call-template name="last1Footer" />
-	    <xsl:call-template name="last2Footer" />
+            <xsl:for-each select="notification_data/requests_by_library/library_requests_for_display">
+                <div class="messageArea">
+                    <div class="messageBody">
+                        <table role='presentation' cellspacing="0" cellpadding="5" border="0">
+                            <tr>
+                                <td>@@following_item_requested_on@@ <xsl:value-of select="notification_data/request/create_date"/>, @@can_picked_at@@ <xsl:value-of select="notification_data/request/assigned_unit_name"/> @@circulation_desk@@.</td>
+                            </tr>
+                            <xsl:if test="notification_data/request/work_flow_entity/expiration_date">
+                                <tr>
+                                    <td>
+                                        @@note_item_held_until@@ <xsl:value-of select="notification_data/request/work_flow_entity/expiration_date"/>.
+                                    </td>
+                                </tr>
+                            </xsl:if>
+                            <tr>
+                                <td>
+                                    <xsl:call-template name="recordTitle" /> <!-- recordTitle.xsl -->
+                                </td>
+                            </tr>
+                            <xsl:if test="notification_data/request/system_notes">
+                                <tr>
+                                    <td><strong>@@notes_affect_loan@@:</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><xsl:value-of select="notification_data/request/system_notes"/></td>
+                                </tr>
+                            </xsl:if>
+                        </table>
+                    </div>
+                </div>
+            </xsl:for-each>
 
-      </body>
+            <!-- footer.xsl -->
+            <!-- xsl:call-template name="reachoutSalutation" -->
+            <xsl:call-template name="attentionSalutation" />
+            <xsl:call-template name="salutation" />
+            <xsl:call-template name="last1Footer" />
+            <xsl:call-template name="last2Footer" />
+        </body>
     </html>
-  </xsl:template>
+</xsl:template>
 </xsl:stylesheet>
