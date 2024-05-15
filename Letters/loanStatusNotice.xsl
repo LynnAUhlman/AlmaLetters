@@ -77,9 +77,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 							<xsl:call-template name="mainTableStyleCss" /> <!-- style.xsl -->
 						</xsl:attribute>
 						<tr>
-<th>@@title@@</th>
+                            <th>@@title@@</th>
 							<th>@@author@@</th>
-							<th>@@call_number@@</th>
+							<th>@@Call Number@@</th>
 							<th>@@old_due_date@@</th>
 							<th>@@new_due_date@@</th>
 							<th>@@library@@</th>
