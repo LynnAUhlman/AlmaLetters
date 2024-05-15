@@ -3,6 +3,8 @@
         <test_list><normalized_sum>2</normalized_sum></test_list>
         <test_list><normalized_sum>3</normalized_sum></test_list>
     </test_list_list>
+
+<!-- CONVERSATION MESSAGE DATA -->
   <conversation_messages>
     <last_message></last_message>
     <message>
@@ -203,6 +205,8 @@
       <message_subject>before receive2019-11-18</message_subject>
     </message>
   </conversation_messages>
+	
+<!-- GENERAL DATA -->
   <general_data>
     <address_c>;</address_c>
     <address_c>;</address_c>
@@ -213,9 +217,14 @@
     <letter_type>Letter Type</letter_type>
     <subject>Subject</subject>
   </general_data>
+	
+<!-- LANGUAGES DATA -->
+
   <languages>
     <string>en</string>
   </languages>
+	
+<!-- LETTER_PARAMS DATA -->
   <letter_params>
     <address_c></address_c>
     <address_cc></address_cc>
@@ -225,6 +234,8 @@
   </letter_params>
   <letter_texts></letter_texts>
   <normalize_sum_strategy></normalize_sum_strategy>
+	
+<!-- ORGANIZATION_UNIT DATA -->
   <organization_unit>
     <address></address>
     <automatic_creation>false</automatic_creation>
@@ -293,6 +304,8 @@
     <unique_ejournal_titles>Green power and market research news</unique_ejournal_titles>
     <url_mapping_prefix></url_mapping_prefix>
   </organization_unit>
+	
+<!-- RECEIVERS DATA -->
   <receivers>
     <receiver>
       <address_types></address_types>
@@ -665,6 +678,8 @@
       </vendor_account>
       <mail_address>John.Smith@example.com</mail_address>
     </receiver>
+	
+<!-- SMS_RECEIVER DATA -->
     <sms_receiver>
       <attached_to_entity_id>15491064700000123</attached_to_entity_id>
       <auth_method></auth_method>
@@ -685,6 +700,8 @@
       <sub_directory>Fulfillment A</sub_directory>
       <target_file_name>FulPlaceOnHoldShelfLetter_20190826072439_630</target_file_name>
     </sms_receiver>
+	
+<!-- EMAIL_RECEIVER DATA -->
     <email_receiver>
       <attached_to_entity_id>18234665810000123</attached_to_entity_id>
       <entity_id>18234665810000123</entity_id>
@@ -699,6 +716,8 @@
   <send_after_commit>false</send_after_commit>
   <sms_content></sms_content>
   <throw_exceptions>false</throw_exceptions>
+	
+<!-- WEBHOOK DATA -->
   <webhook_data>
     <fees></fees>
     <items></items>
@@ -744,6 +763,8 @@
 			</deposit_data_display>
 		</new_deposit_displays>
 	</deposit_activity_display>
+	
+<!-- DEPOSIT DATA -->
   <deposit>
     <created_by>exl_impl</created_by>
     <creation_date>26/11/2019</creation_date>
@@ -764,10 +785,14 @@
     <title>StaffMediatedDeposit_Title_26111522249</title>
     <user_primary_id>exl_impl</user_primary_id>
   </deposit>
+	
+<!-- DOWNLOAD_FILE_JOB DATA -->
   <download_file_job> 
    <size>10MB</size>  
    <link>http://www.google.com</link>  
   </download_file_job>
+	
+<!-- DELIVERY_REGISTRATION DATA -->
   <delivery_registration>
   	<!-- status values are REGISTERED, ITEM_AVAILABLE, and GRACE_PERIOD_EXPIRED -->
   	<status>REGISTERED</status>
@@ -781,6 +806,8 @@
   <receipt_id></receipt_id>
   <total_amount_paid>150.00</total_amount_paid>
   <transaction_id>42060000123</transaction_id>
+	
+<!-- USER DATA -->  
   <user>
     <addresses_mask>$preferredlabel$ $false$, ::enc::F51353101C2EFA8A269CA216CD6C9717::enc::, ::enc::574957CCD9341A154F7AA5999F85370F::enc::, $addresstypeslabel$ ::ctvs::home::ctvs::, $notelabel$ , $startdatelabel$ ::date::1405382400000::date::, $enddatelabel$ ::date::::date::&lt;br&gt;$preferredlabel$ $true$, ::enc::F51353101C2EFA8A269CA216CD6C9717::enc::, ::enc::5A275C6CC6A6749332067B9BE47EBBEC::enc::, $addresstypeslabel$ ::ctvs::work::ctvs::, $notelabel$ , $startdatelabel$ ::date::1405382400000::date::, $enddatelabel$ ::date::::date::&lt;br&gt;</addresses_mask>
     <birth_date></birth_date>
@@ -1012,6 +1039,8 @@
       <year_ui></year_ui>
     </last_patron_activity_date_dummy>
   </user>
+		
+<!-- USER_FINES_FEES_LIST DATA -->
   <user_fines_fees_list>
     <user_fines_fees>
       <bursar_transaction_id></bursar_transaction_id>
@@ -1367,6 +1396,8 @@
     </user_fines_fees>
   </user_fines_fees_list>
   <user_title></user_title>
+ 	
+<!-- LOANS_BY_LIBRARY DATA -->
   <loans_by_library>
 		<library_loans_for_display>
 			<item_loans>
@@ -1798,7 +1829,9 @@
 		</library_loans_for_display>
 	</loans_by_library>
   <message>General message.</message>
-  <phys_item_display></phys_item_display>
+  <phys_item_display></phys_item_display>	
+	
+<!-- USER_FOR_PRINTING DATA -->
   <user_for_printing>
     <address1>22 Main St.</address1>
     <address2></address2>
@@ -1827,7 +1860,9 @@
     <title>GeneralAdministrator</title>
     <user_group>STAFF</user_group>
     <user_title></user_title>
-  </user_for_printing>
+  </user_for_printing>	
+
+<!-- BORROWER DATA -->
   <borrower>
     <address1></address1>
     <address2></address2>
@@ -1861,7 +1896,9 @@
   <messege>The item 02121559579Proxy, was picked up by Smith, Adam. The request is completed.</messege>
   <attachments_list></attachments_list>
   <booking_end_time_str></booking_end_time_str>
-  <booking_start_time_str></booking_start_time_str>
+  <booking_start_time_str></booking_start_time_str>	
+
+<!-- METADATA DATA -->
   <metadata>
 		<title>Our Maine: exploring its rich natural heritage</title>
 		<author>Calhoun, Aram J. K., editor; Hunter, Malcolm L., Jr., 1952- editor; Redford, Kent H., 1955- editor; Zamfirescu, Laura, photographer</author>
@@ -1872,7 +1909,9 @@
   <new_terms_exist>false</new_terms_exist>
   <old_delivey_time>3</old_delivey_time>
   <old_loan_period>140</old_loan_period>
-  <old_terms_exist>true</old_terms_exist>
+  <old_terms_exist>true</old_terms_exist>	
+
+<!-- NGRS_REQUEST DATA -->
   <ngrs_request>
 		<cost/>
 		<create_date>01/25/2022</create_date>
@@ -1895,6 +1934,8 @@
 		<recalculate_rapido_offer/>
 		<request_id>35015309340002122</request_id>
   </ngrs_request>
+
+<!-- REQUEST DATA -->
   <request>
     <active>true</active>
     <all_org_fields></all_org_fields>
@@ -2513,14 +2554,18 @@
     <ngrs_rapido>false</ngrs_rapido>
     <notes>Chapter 3-4</notes>
   </request>
-  <request></request>
+  <request></request>	
+
+<!-- REQUEST_ID DATA -->
   <request_id>18215989240000123</request_id>
   <url_list></url_list>
   <digital_document_delivery>false</digital_document_delivery>
   <external_request_id></external_request_id>
   <external_system></external_system>
   <item_url></item_url>
-  <fine_fee_notification_fee_amount></fine_fee_notification_fee_amount>
+  <fine_fee_notification_fee_amount></fine_fee_notification_fee_amount>	
+
+<!-- FINES_FEES_LIST DATA -->
   <fines_fees_list>
     <user_fines_fees>
       <bursar_transaction_id></bursar_transaction_id>
@@ -2840,7 +2885,9 @@
 	<external_request_id>RS-12345678</external_request_id>
   </incoming_request>
   <operator_user_name>exl_impl</operator_user_name>
-  <request_type>Patron physical item request</request_type>
+  <request_type>Patron physical item request</request_type>	
+
+<!-- ITEM_LOANS DATA -->
   <item_loans>
     <item_loan>
       <accession_number></accession_number>
@@ -3034,7 +3081,9 @@
       <was_due_date_adjusted_to_library_open_hours>false</was_due_date_adjusted_to_library_open_hours>
     </item_loan>
   </item_loans>
-  <circ_desk_name>UMPI Presque Isle</circ_desk_name>
+  <circ_desk_name>UMPI Presque Isle</circ_desk_name>	
+
+<!-- ITEMS DATA -->
   <items>
     <item_loan>
       <accession_number></accession_number>
@@ -3377,7 +3426,9 @@
       <type>Book</type>
       <url>https://my.alma.exlibrisgroup.com/discovery/fulldisplay?docid=alma99131241750000123&amp;context=L&amp;vid=01ABCDE_INST:Auto1</url>
     </saved_searches_letter_item>
-  </items>
+  </items>	
+
+<!-- ITEM_LOAN DATA -->
   <item_loan>
     <accession_number></accession_number>
     <alternative_call_number></alternative_call_number>
@@ -3779,6 +3830,9 @@
     <version>1</version>
     <was_due_date_adjusted_to_library_open_hours>false</was_due_date_adjusted_to_library_open_hours>
   </item_loan>
+		
+
+<!-- DISPLAY_LIST DATA -->
   <display_list>
     <overdue_and_lost_loan_notification_display>
       <fines_fees_list>
@@ -4560,6 +4614,9 @@
     <string>Law Library: 20.00 USD</string>
   </organization_fee_list>
   <overdue_item_loans></overdue_item_loans>
+		
+
+<!-- OVERDUE_LOANS_BY_LIBRARY DATA -->
   <overdue_loans_by_library>
 		<library_loans_for_display>
 			<item_loans>
@@ -5011,6 +5068,9 @@
   <assigned_object_id>15956868980000123</assigned_object_id>
   <assigned_object_name>15-311143</assigned_object_name>
   <note>sdfdsfsdf</note>
+		
+
+<!-- OWNER DATA -->
   <owner>
     <addresses_mask>$preferredlabel$ $true$, ::enc::C33782D24F22EB163371C09B8E33627D::enc::, $addresstypeslabel$ ::ctvs::home,work::ctvs::, $notelabel$ , $startdatelabel$ ::date::1472375068888::date::, $enddatelabel$ ::date::::date::&lt;br&gt;</addresses_mask>
     <birth_date></birth_date>
@@ -5432,7 +5492,9 @@
     <claim_text>Attached information regarding items that have been ordered but not received. Please supply the required item/s or advise</claim_text>
     <claim_type>monograph</claim_type>
   </claim>
-  <edi_parameters></edi_parameters>
+  <edi_parameters></edi_parameters>	
+
+<!-- LINE_DETAILS DATA -->
   <line_details>
     <acqterms_edition_alternate_graphic></acqterms_edition_alternate_graphic>
     <alternative_title></alternative_title>
@@ -5462,7 +5524,9 @@
     <vendor_contact_persons>-</vendor_contact_persons>
     <vendor_note>-</vendor_note>
     <vendor_refernce_number></vendor_refernce_number>
-  </line_details>
+  </line_details>	
+
+<!-- PO DATA -->
   <po>
     <acquisition_method>LEGAL_DEPOSIT</acquisition_method>
     <active>true</active>
@@ -6004,7 +6068,9 @@
     <version>5</version>
     <waiting_for_ready_lines>false</waiting_for_ready_lines>
   </po>
-  <group_settings></group_settings>
+  <group_settings></group_settings>	
+
+<!-- LICENSE DATA -->
   <license>
     <all_license_terms>
       <license_term>
@@ -6147,7 +6213,9 @@
     <status>ACTIVE</status>
     <type>LICENSE</type>
     <uri>http://google.com</uri>
-  </license>
+  </license>	
+
+<!-- LIST DATA -->
   <list>
     <term_license>
       <comment>Permitted</comment>
@@ -6246,7 +6314,9 @@
       <type></type>
     </term_license>
   </list>
-  <neg_license_rep_list></neg_license_rep_list>
+  <neg_license_rep_list></neg_license_rep_list>	
+
+<!-- INSTITUTION DATA -->
   <institution>
    	<address>
 		<city>LA</city>
@@ -7241,7 +7311,9 @@
     <title>People [electronic resource].</title>
     <url>view/action/pageAction.do?operation=LOAD&amp;pageViewMode=Edit&amp;xmlFileName=survey.survey_form.xml&amp;c_id=1123&amp;i_id=0123&amp;pageBean.trialId=18223550440000123&amp;RenewBean=true&amp;wizardName=survey.feedback_wizard</url>
     <valid></valid>
-  </trial>
+  </trial>	
+
+<!-- FINES_FEES DATA -->
   <fines_fees>
     <user_fines_fees>
       <bursar_transaction_id></bursar_transaction_id>
@@ -7350,7 +7422,9 @@
     </user_fines_fees>
   </fines_fees>
   <temp_password>j894j324012ma2</temp_password>
-  <total_count>27</total_count>
+  <total_count>27</total_count>	
+
+<!-- EVENTS DATA -->
   <events>
 		<detailed_notifications_summary>
 			<course_code>C1_2022</course_code>
@@ -7396,7 +7470,9 @@
 			<permalink_url>https://alma.exlibrisgroup.com/leganto/public/01ABCDE_INST/lists/46250573250001234</permalink_url>
 			<submit_lists_by/>
 		</detailed_notifications_summary>
-  </events>
+  </events>	
+
+<!-- ITEM DATA -->
   <item>
 	<available_items>
 		<available_item>
