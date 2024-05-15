@@ -51,36 +51,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		                </td>
 		              </tr>
 		            </table>
-					<table role='presentation' >
-						<tr>
-							<td>@@signature@@</td>
-						</tr>
-						<tr>
-							<td>
-								<xsl:value-of select="notification_data/organization_unit/name" />
-							</td>
-						</tr>
-						<xsl:if test="notification_data/organization_unit/address/city !=''">
-							<tr>
-								<td>
-									<xsl:value-of select="notification_data/organization_unit/address/city" />
-								</td>
-							</tr>
-						</xsl:if>
-						<xsl:if test="notification_data/organization_unit/address/country !=''">
-							<tr>
-								<td>
-									<xsl:value-of select="notification_data/organization_unit/address/country" />
-								</td>
-							</tr>
-						</xsl:if>
-					</table>
 		          </div>
 				</div>
             <!-- footer.xsl -->
             <!-- <xsl:call-template name="reachoutSalutation" /> -->
             <!--<xsl:call-template name="attentionSalutation" /> -->
             <xsl:call-template name="salutation" />
+            <br />
             <xsl:call-template name="last1Footer" />
             <xsl:call-template name="last2Footer" />
         </body>
