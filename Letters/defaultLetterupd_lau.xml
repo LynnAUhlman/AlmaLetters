@@ -57,7 +57,7 @@
         </expiry_date_dummy>
         <external_id></external_id>
         <failed_authentication>0</failed_authentication>
-        <first_name>John</first_name>
+        <first_name>Grady</first_name>
         <force_password_change>false</force_password_change>
         <force_update_external>false</force_update_external>
         <force_update_external_original_fields>false</force_update_external_original_fields>
@@ -210,12 +210,13 @@
   <general_data>
     <address_c>;</address_c>
     <address_c>;</address_c>
-    <address_from>Your.Department@mainlib.org</address_from>
+    <address_from>umfmantorlibrary-group@SCRUBBED_maine.edu1</address_from>
     <current_date>05/13/2024</current_date>
+    <current_time>10:18:23 EDT</current_time>
     <letter_channel_info></letter_channel_info>
     <letter_name>Letter Name</letter_name>
     <letter_type>Letter Type</letter_type>
-    <subject>Subject</subject>
+    <subject>On Hold Shelf </subject>
   </general_data>
 	
 <!-- LANGUAGES DATA -->
@@ -228,7 +229,7 @@
   <letter_params>
     <address_c></address_c>
     <address_cc></address_cc>
-    <address_from>Your.Department@mainlib.org</address_from>
+    <address_from>umfmantorlibrary-group@SCRUBBED_maine.edu2</address_from>
     <letter_name>The Letter Name</letter_name>
     <subject>The letter subject</subject>
   </letter_params>
@@ -246,7 +247,7 @@
     <code>01ABCDE_INST</code>
     <code_rfid></code_rfid>
     <country></country>
-    <create_date>17/10/2011</create_date>
+    <create_date>02/01/2024</create_date>
     <data_encryption_type></data_encryption_type>
     <default_acq_loctaion_id>31601400000123</default_acq_loctaion_id>
     <default_item_loctaion_id>31601400000123</default_item_loctaion_id>
@@ -360,7 +361,7 @@
         <cataloger_level>00</cataloger_level>
         <cataloger_level_original_value>00</cataloger_level_original_value>
         <checksum></checksum>
-        <create_date>31/03/2015</create_date>
+        <create_date>02/01/2024</create_date>
         <default_language>en</default_language>
         <duplicate_user_name>AACvYvACZAAEYf7AAO</duplicate_user_name>
         <emails_mask>$preferredlabel$ $false$, ::enc::04B8B43F0B584CD5B597944BA89922985C15BFCFB29978218C7372E37B0084C4CE497DD6A1430AE4A0724DC88014E6B4::enc::, $emailtypeslabel$ ::ctvs::claimMail,orderMail,paymentMail,queries,returnsMail::ctvs::, $descriptionlabel$ &lt;br&gt;$preferredlabel$ $true$, ::enc::ED740D3F93168D1E917A2BD20072D3D3F692B3EC9FFB1F55C5E87C67007BBA2D::enc::, $emailtypeslabel$ ::ctvs::claimMail,orderMail,paymentMail,queries,returnsMail::ctvs::, $descriptionlabel$ &lt;br&gt;</emails_mask>
@@ -484,7 +485,7 @@
         <user_address_list></user_address_list>
         <user_email_list>
           <user_email>
-            <create_date>31/03/2015</create_date>
+            <create_date>02/01/2024</create_date>
             <description></description>
             <email>acquisition.manager.mail@gmail.com</email>
             <entity_action></entity_action>
@@ -496,7 +497,7 @@
             <preferred>false</preferred>
           </user_email>
           <user_email>
-            <create_date>26/08/2019</create_date>
+            <create_date>02/01/2024</create_date>
             <description></description>
             <email>amanager.manager@example.com</email>
             <entity_action></entity_action>
@@ -523,20 +524,20 @@
         <user_user_type>INTERNAL</user_user_type>
         <user_web_address_list></user_web_address_list>
         <web_site_url></web_site_url>
-        <last_patron_activity_date>26/11/2019</last_patron_activity_date>
+        <last_patron_activity_date>05/08/2024</last_patron_activity_date>
         <last_patron_activity_date_dummy>
           <calendar>01/01/1970</calendar>
           <calendar_ui></calendar_ui>
-          <day>1</day>
+          <day>8</day>
           <day_ui></day_ui>
           <default_value_for_with_validation>0</default_value_for_with_validation>
           <full_date>2019-11-26</full_date>
           <full_date_from_ui></full_date_from_ui>
           <input_date_tag_format>00.00.0</input_date_tag_format>
-          <month>0</month>
+          <month>4</month>
           <month_ui></month_ui>
           <date>true</date>
-          <year>1970</year>
+          <year>2024</year>
           <year_ui></year_ui>
         </last_patron_activity_date_dummy>
         <copied_from_z>false</copied_from_z>
@@ -547,7 +548,7 @@
         <code>AutoFul</code>
         <create_date>31/03/2015</create_date>
         <description>A printer for Automatic tests</description>
-        <email>john.smith@example.com</email>
+        <email>grady.smith@maine.edu</email>
         <entity_action></entity_action>
         <library_id>31589510000123</library_id>
         <library_unit_id></library_unit_id>
@@ -962,14 +963,14 @@
         <entity_action></entity_action>
         <library_id></library_id>
         <library_unit_id></library_unit_id>
-        <line1>1 Main St.</line1>
-        <line2></line2>
-        <line3></line3>
-        <line4></line4>
-        <line5></line5>
+	<line1>Mantor Library</line1>
+	<line2>University of Maine at Farmington</line2>
+	<line3>116 South Street</line3>
+	<line4></line4>
+	<line5></line5>
         <note></note>
         <originating_id></originating_id>
-        <postal_code></postal_code>
+        <postal_code>04938</postal_code>
         <preferred>true</preferred>
         <state_province></state_province>
       </user_address>
@@ -997,7 +998,7 @@
       <user_email>
         <create_date>05/01/2024</create_date>
         <description></description>
-        <email>john.smith@example.com</email>
+        <email>grady.smith@maine.edu</email>
         <entity_action></entity_action>
         <esploro_display_email></esploro_display_email>
         <external_id></external_id>
@@ -1008,7 +1009,7 @@
       </user_email>
     </user_email_list>
     <user_gender></user_gender>
-    <user_group>STAFF</user_group>
+    <user_group>BGR_FAC_STAFF</user_group>
     <user_group_original_value>STAFF</user_group_original_value>
     <user_name>ATU_1573580440051</user_name>
     <user_phone_list></user_phone_list>
@@ -1084,7 +1085,7 @@
         <automatically_locate_resource>false</automatically_locate_resource>
         <bibliographic_titles></bibliographic_titles>
         <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-        <code>ONL</code>
+        <code>FAR</code>
         <code_rfid></code_rfid>
         <country></country>
         <create_date>17/10/2011</create_date>
@@ -1260,7 +1261,7 @@
         <automatically_locate_resource>false</automatically_locate_resource>
         <bibliographic_titles></bibliographic_titles>
         <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-        <code>ONL</code>
+        <code>FAR</code>
         <code_rfid></code_rfid>
         <country></country>
         <create_date>17/10/2011</create_date>
@@ -1740,7 +1741,7 @@
 				<automatically_locate_resource>false</automatically_locate_resource>
 				<bibliographic_titles/>
 				<cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-				<code>ONL</code>
+				<code>FAR</code>
 				<code_rfid/>
 				<country/>
 				<create_date>17/10/2011</create_date>
@@ -1990,7 +1991,7 @@
       <year>1970</year>
       <year_ui></year_ui>
     </date_available_to_dummy>
-    <delivery_address>Main College - LIB_Digit_Dept</delivery_address>
+    <delivery_address>UMA Augusta</delivery_address>
     <deposit_indicator>false</deposit_indicator>
     <document_delivery_email></document_delivery_email>
     <document_delivery_file_name></document_delivery_file_name>
@@ -2077,26 +2078,39 @@
       <call_number_prefix></call_number_prefix>
       <call_number_suffix></call_number_suffix>
       <category_of_material></category_of_material>
-      <complete_edition></complete_edition>
-      <complete_title>12111637635_MoveItems5</complete_title>
-      <complete_title_reversed>12111637635_MoveItems5</complete_title_reversed>
+      <complete_edition>First edition</complete_edition>
+      <complete_title>The adventures of Amina Al-Sirafi : a novel / Shannon Chakraborty</complete_title>
+      <complete_title_reversed>The adventures of Amina Al-Sirafi : a novel / Shannon Chakraborty</complete_title_reversed>
       <completeness></completeness>
       <copy_number></copy_number>
       <copy_version_ident_note></copy_version_ident_note>
-      <creator>12111637635_MoveItems5Author</creator>
-      <date></date>
-      <date_of_publication></date_of_publication>
+      <creator>Chakraborty, S. A., author</creator>
+      <date>2023</date>
+      <date_of_publication>[2023]</date_of_publication>
       <date_of_report></date_of_report>
-      <description></description>
-      <description_list></description_list>
+      <description>&quot;The first book of &quot;a new trilogy of magic and mayhem on the high seas in this tale of pirates and sorcerers, forbidden artifacts and ancient mysteries, in one woman's determined quest to seize a final chance at glory--and write her own legend ... Amina al-Sirafi should be content. After a storied and scandalous career as one of the Indian Ocean's most notorious pirates, she's survived backstabbing rogues, vengeful merchant princes, several husbands, and one actual demon to retire peacefully with her family to a life of piety, motherhood, and absolutely nothing that hints of the supernatural. But when she's tracked down by the obscenely wealthy mother of a former crewman, she's offered a job no bandit could refuse: retrieve her comrade's kidnapped daughter for a kingly sum. The chance to have one last adventure with her crew, do right by an old friend, and win a fortune that will secure her family's future forever? It seems like such an obvious choice that it must be God's will. Yet the deeper Amina dives, the more it becomes alarmingly clear there's more to this job, and the girl's disappearance, than she was led to believe. For there's always risk in wanting to become a legend, to seize one last chance at glory, to savor just a bit more power ... and the price might be your very soul&quot;-- Provided by publisher</description>
+      <description_list><string>&quot;The first book of &quot;a new trilogy of magic and mayhem on the high seas in this tale of pirates and sorcerers, forbidden artifacts and ancient mysteries, in one woman's determined quest to seize a final chance at glory--and write her own legend ... Amina al-Sirafi should be content. After a storied and scandalous career as one of the Indian Ocean's most notorious pirates, she's survived backstabbing rogues, vengeful merchant princes, several husbands, and one actual demon to retire peacefully with her family to a life of piety, motherhood, and absolutely nothing that hints of the supernatural. But when she's tracked down by the obscenely wealthy mother of a former crewman, she's offered a job no bandit could refuse: retrieve her comrade's kidnapped daughter for a kingly sum. The chance to have one last adventure with her crew, do right by an old friend, and win a fortune that will secure her family's future forever? It seems like such an obvious choice that it must be God's will. Yet the deeper Amina dives, the more it becomes alarmingly clear there's more to this job, and the girl's disappearance, than she was led to believe. For there's always risk in wanting to become a legend, to seize one last chance at glory, to savor just a bit more power ... and the price might be your very soul&quot;-- Provided by publisher</string>
+      </description_list>
       <encoding_level></encoding_level>
       <end_pub_date>####</end_pub_date>
       <format></format>
+      <general_note>Includes glossary, author's note and further reading</general_note>
+      <general_note_list><string>Includes glossary, author's note and further reading</string>
+      <string>&quot;Map design by Virginia Allyn&quot;--Copyright page</string>
+      </general_note_list>
       <general_retention></general_retention>
       <holdings></holdings>
-      <id>99137700490400123</id>
+      <id>991004810459708681</id>
+      <identifier></identifier>
+      <identifier35></identifier35>
       <immediate_source_of_acq_note></immediate_source_of_acq_note>
-      <isbn_az></isbn_az>
+      <instance_about_i></instance_about_i>
+      <resource_from_network></resource_from_network>
+      <isbn>0062963503</isbn>
+      <isbn_az>9780062963505</isbn_az>
+      <isbn_list><string>0062963503</string>
+      <string>9780062963505</string>
+      </isbn_list>
       <isbn_or_eisbn></isbn_or_eisbn>
       <issn_and_eissn_list></issn_and_eissn_list>
       <issn_az></issn_az>
@@ -2120,7 +2134,11 @@
       <network_number_a></network_number_a>
       <non_public_location_note></non_public_location_note>
       <notes></notes>
-      <notes_list></notes_list>
+      <notes_list><string>Includes bibliographical references (page 479)</string>
+      <string>Includes glossary, author's note and further reading</string>
+      <string>&quot;Map design by Virginia Allyn&quot;--Copyright page</string>
+      <string>BPL: David Winn Bishop and Isabel MacPherson Bishop Memorial Fund.</string>
+      </notes_list>      
       <nuc_code></nuc_code>
       <operational_sec>
         <elm></elm>
@@ -2133,17 +2151,17 @@
               <value>
                 <operational_fld>
                   <name>creator</name>
-                  <value>12111637635_MoveItems5Author</value>
+                  <value>The adventures of Amina Al-Sirafi : a novel / Shannon Chakraborty</value>
                 </operational_fld>
               </value>
             </creator>
           </map_entry>
           <map_entry>
             <complete_title>
-              <value>
+              <value>Includes bibliographical references (page 479)</value>
                 <operational_fld>
                   <name>complete_title</name>
-                  <value>12111637635_MoveItems5</value>
+                  <value>&quot;Map design by Virginia Allyn&quot;--Copyright page</value>
                 </operational_fld>
               </value>
             </complete_title>
@@ -2387,7 +2405,7 @@
             <value>BK</value>
           </operational_fld>
           <operational_fld>
-            <name>short_title</name>
+            <name></name>
             <value>12111637635_MoveItems5</value>
           </operational_fld>
           <operational_fld>
@@ -2538,11 +2556,11 @@
       <assigned_unit_type>CIRCULATION_DESK</assigned_unit_type>
       <calculated_destination_id>15956595130000123</calculated_destination_id>
       <calculated_destination_type>SERVICE_UNIT</calculated_destination_type>
-      <create_date>12/11/2019</create_date>
+      <create_date>12/11/2023</create_date>
       <destination_institution_code></destination_institution_code>
       <entity_action></entity_action>
-      <estimated_arrival_date>14/11/2019</estimated_arrival_date>
-      <expiration_date>19/11/2019</expiration_date>
+      <estimated_arrival_date>05/31/2024</estimated_arrival_date>
+      <expiration_date>05/17/2024</expiration_date>
       <expiration_date_to_end_of_day></expiration_date_to_end_of_day>
       <transit>false</transit>
       <work_order_department>false</work_order_department>
@@ -2609,7 +2627,7 @@
         <automatically_locate_resource>false</automatically_locate_resource>
         <bibliographic_titles></bibliographic_titles>
         <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-        <code>ONL</code>
+        <code>FAR</code>
         <code_rfid></code_rfid>
         <country></country>
         <create_date>17/10/2011</create_date>
@@ -2619,7 +2637,7 @@
         <default_move_loctaion_id>31601020000123</default_move_loctaion_id>
         <default_pickup_loctaion_id>31590280000123</default_pickup_loctaion_id>
         <default_printer></default_printer>
-        <description></description>
+        <description>UMF Farmington</description>
         <digital_objects></digital_objects>
         <digital_storage_size></digital_storage_size>
         <disable_call_number_calculation>false</disable_call_number_calculation>
@@ -2628,7 +2646,7 @@
         <email>
           <create_date>02/25/2024</create_date>
           <description></description>
-          <email>amanager.manager@example.com</email>
+          <email>umfmantorlibrary-group@SCRUBBED_maine.edu</email>
           <entity_action></entity_action>
           <esploro_display_email></esploro_display_email>
           <external_id></external_id>
@@ -2761,7 +2779,7 @@
         <automatically_locate_resource>false</automatically_locate_resource>
         <bibliographic_titles></bibliographic_titles>
         <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-        <code>ONL</code>
+        <code>FAR</code>
         <code_rfid></code_rfid>
         <country></country>
         <create_date>17/10/2011</create_date>
@@ -2780,7 +2798,7 @@
         <email>
           <create_date>02/25/2024</create_date>
           <description></description>
-          <email>amanager.manager@example.com</email>
+          <email>umfklibrary@SCRUBBED_maine.edu</email>
           <entity_action></entity_action>
           <esploro_display_email></esploro_display_email>
           <external_id></external_id>
@@ -3878,7 +3896,7 @@
             <automatically_locate_resource>false</automatically_locate_resource>
             <bibliographic_titles></bibliographic_titles>
             <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-            <code>ONL</code>
+            <code>FAR</code>
             <code_rfid></code_rfid>
             <country></country>
             <create_date>17/10/2011</create_date>
@@ -3939,8 +3957,8 @@
               <library_id></library_id>
               <library_unit_id></library_unit_id>
               <originating_id></originating_id>
-              <phone>123-456-1234</phone>
-              <preferred>false</preferred>
+              <phone>207-555-1212</phone>
+              <preferred>true</preferred>
               <preferred_phone></preferred_phone>
               <preferred_sms></preferred_sms>
             </phone>
@@ -4030,7 +4048,7 @@
             <automatically_locate_resource>false</automatically_locate_resource>
             <bibliographic_titles></bibliographic_titles>
             <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-            <code>ONL</code>
+            <code>FAR</code>
             <code_rfid></code_rfid>
             <country></country>
             <create_date>17/10/2011</create_date>
@@ -4182,7 +4200,7 @@
             <automatically_locate_resource>false</automatically_locate_resource>
             <bibliographic_titles></bibliographic_titles>
             <cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-            <code>ONL</code>
+            <code>FAR</code>
             <code_rfid></code_rfid>
             <country></country>
             <create_date>17/10/2011</create_date>
@@ -4485,90 +4503,92 @@
         <version>5</version>
         <was_due_date_adjusted_to_library_open_hours>false</was_due_date_adjusted_to_library_open_hours>
       </item_loan>
+<!-- PHYSICAL_ITEM_DISPLAY_FOR_PRINTING DATA -->
       <physical_item_display_for_printing>
         <accession_number></accession_number>
         <alt_call_number_type></alt_call_number_type>
         <attachments></attachments>
-        <author>01121651232LostPaid1Author</author>
-        <available_items>
-          <available_item>
-            <barcode>978654123 B15LostPaid1</barcode>
-            <call_number></call_number>
-            <inventory_number></inventory_number>
-            <item_policy></item_policy>
-            <library_code>ONL</library_code>
-            <library_name>Law Library</library_name>
-            <location_code>LIB_1_1</location_code>
-            <location_name>Lib name AutoLIB 1 1</location_name>
-            <material_type>BOOK</material_type>
-            <public_note></public_note>
-            <shelving_location></shelving_location>
-          </available_item>
+        <author>Chakraborty, S. A.,</author>
+	<available_items>
+	<available_item>
+	<barcode>32454006991161</barcode>
+	<call_number>PS3603.H33555 A38 2023</call_number>
+	<inventory_number></inventory_number>
+	<item_policy>1</item_policy>
+	<library_code>FAR</library_code>
+	<library_name>UMF Farmington</library_name>
+	<location_code>FLOBBY</location_code>
+	<location_name>Farmington Lobby</location_name>
+	<material_type>BOOK</material_type>
+	<public_note></public_note>
+	<shelving_location></shelving_location>
+	</available_item>
         </available_items>
-        <barcode>978654123 B16LostPaid1</barcode>
-        <call_number></call_number>
-        <call_number_type>0</call_number_type>
-        <chron_i></chron_i>
-        <chron_j></chron_j>
-        <chron_k></chron_k>
-        <chron_l></chron_l>
-        <chron_m></chron_m>
-        <copy_id></copy_id>
-        <destination_name></destination_name>
-        <display_alt_call_numbers></display_alt_call_numbers>
-        <edition></edition>
-        <enum_a></enum_a>
-        <enum_b></enum_b>
-        <enum_c></enum_c>
-        <enum_d></enum_d>
-        <enum_e></enum_e>
-        <enum_f></enum_f>
-        <enum_g></enum_g>
-        <enum_h></enum_h>
-        <fulfillment_note></fulfillment_note>
-        <imprint></imprint>
-        <internal_note1></internal_note1>
-        <internal_note2></internal_note2>
-        <internal_note3></internal_note3>
-        <inventory_material_type>Book</inventory_material_type>
-        <isbn></isbn>
-        <issn></issn>
-        <issue_level_description></issue_level_description>
-        <item_pid>23449735250000123</item_pid>
-        <item_policy></item_policy>
-        <library_code>ONL</library_code>
-        <library_name>Law Library</library_name>
-        <location_code>LIB_1_1</location_code>
-        <location_name>Lib name AutoLIB 1 1</location_name>
-        <material_type>BOOK</material_type>
-        <optional_barcodes>
-          <string>01121651232LostPaid1</string>
-        </optional_barcodes>
-        <owning_library_details>
-          <address1>Main College Libraries</address1>
-          <address2>1 First st.</address2>
-          <address3></address3>
-          <address4></address4>
-          <address5></address5>
-          <city>LA</city>
-          <country>USA</country>
-          <email>amanager.manager@example.com</email>
-          <first_name></first_name>
-          <identifiers>
-            <code_value>
-              <code>Primary Identifier</code>
-              <value></value>
-            </code_value>
-          </identifiers>
-          <last_name></last_name>
-          <middle_name></middle_name>
-          <name>Law Library</name>
-          <phone>123-456-1234</phone>
-          <postal_code>02467</postal_code>
-          <preferred_first_name></preferred_first_name>
-          <preferred_last_name></preferred_last_name>
-          <preferred_middle_name></preferred_middle_name>
-          <state>MA</state>
+	<barcode>32454006991161</barcode>
+	<call_number>PS3603.H33555 A38 2023</call_number>
+	<call_number_type>0</call_number_type>
+	<chron_i></chron_i>
+	<chron_j></chron_j>
+	<chron_k></chron_k>
+	<chron_l></chron_l>
+	<chron_m></chron_m>
+	<committed_to_retain></committed_to_retain>
+	<copy_id>1</copy_id>
+	<destination_name></destination_name>
+	<display_alt_call_numbers></display_alt_call_numbers>
+	<edition>First edition</edition>
+	<enum_a></enum_a>
+	<enum_b></enum_b>
+	<enum_c></enum_c>
+	<enum_d></enum_d>
+	<enum_e></enum_e>
+	<enum_f></enum_f>
+	<enum_g></enum_g>
+	<enum_h></enum_h>
+	<fulfillment_note></fulfillment_note>
+	<imprint>New York, NY : Harper Voyager, an imprint of HarperCollinsPublishers, [2023]</imprint>
+	<internal_note1>Status: on display</internal_note1>
+	<internal_note2></internal_note2>
+	<internal_note3></internal_note3>
+	<inventory_material_type>Book</inventory_material_type>
+	<isbn>0062963503</isbn>
+	<issn></issn>
+	<issue_level_description></issue_level_description>
+	<item_pid>2356401440008681</item_pid>
+	<item_policy>book</item_policy>
+	<library_code>FAR</library_code>
+	<library_name>UMF Farmington</library_name>
+	<location_code>FLOBBY</location_code>
+	<location_name>Farmington Lobby</location_name>
+	<material_type>BOOK</material_type>
+	<optional_barcodes><string>32454006991161</string>
+	</optional_barcodes>
+	<owning_library_details><active_balance></active_balance>
+	<address1>Mantor Library</address1>
+	<address2>University of Maine at Farmington</address2>
+	<address3>116 South Street</address3>
+	<address4></address4>
+	<address5></address5>
+	<blocks></blocks>
+	<city>Farmington</city>
+	<country>USA</country>
+	<country_display>United States</country_display>
+	<email></email>
+	<first_name></first_name>
+	<gender></gender>
+	<identifiers><code_value><code>Primary Identifier</code>
+	<value></value>
+	</code_value>
+	</identifiers>
+	<last_name></last_name>
+	<middle_name></middle_name>
+	<name>UMF Farmington</name>
+	<phone>207-778-7227</phone>
+	<postal_code>4938</postal_code>
+	<preferred_first_name></preferred_first_name>
+	<preferred_last_name></preferred_last_name>
+	<preferred_middle_name></preferred_middle_name>
+	<state>ME</state>
           <title></title>
           <user_group></user_group>
           <user_title></user_title>
@@ -4603,7 +4623,7 @@
   <delivery_address>Home Address:
   22 Main St.
    Home City</delivery_address>
-  <item_loan_due_date_policy></item_loan_due_date_policy>
+<item_loan_due_date_policy>28 Days Loan</item_loan_due_date_policy>
   <outgoing></outgoing>
   <amount>1.00</amount>
   <currency_symbol>USD</currency_symbol>
@@ -4976,7 +4996,7 @@
 				<automatically_locate_resource>false</automatically_locate_resource>
 				<bibliographic_titles/>
 				<cancel_request_on_locate_failure>false</cancel_request_on_locate_failure>
-				<code>ONL</code>
+				<code>FAR</code>
 				<code_rfid/>
 				<country/>
 				<create_date>10/17/2011</create_date>
@@ -5238,17 +5258,20 @@
       </user_address>
     </user_address_list>
     <user_email_list>
-      <user_email>
-        <create_date>02/25/2024</create_date>
-        <description></description>
-        <email>shira.ginzburg@example.com</email>
-        <entity_action></entity_action>
-        <esploro_display_email></esploro_display_email>
-        <external_id></external_id>
-        <library_id></library_id>
-        <library_unit_id></library_unit_id>
-        <originating_id></originating_id>
-        <preferred>false</preferred>
+      <create_date>02/04/2024</create_date>
+	<create_date_allow_null></create_date_allow_null>
+	<created_by_user></created_by_user>
+	<description></description>
+	<email>grady.smith@maine.edu</email>
+	<entity_action></entity_action>
+	<esploro_display_email></esploro_display_email>
+	<external_id></external_id>
+	<library_id></library_id>
+	<library_unit_id></library_unit_id>
+	<modification_date_allow_null></modification_date_allow_null>
+	<modified_by_user></modified_by_user>
+	<originating_id></originating_id>
+	<preferred>true</preferred>
       </user_email>
       <user_email>
         <create_date>05/02/2013</create_date>
