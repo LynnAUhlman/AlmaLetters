@@ -69,14 +69,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                     <tr>
                                         <th>@@title@@</th>
                                         <th>@@author@@</th>
+                                        <th>@@call_number@@</th>
                                         <th>@@can_picked_at@@</th>
                                         <th>@@note_item_held_until@@</th>
                                     </tr>
 
-                                    <xsl:for-each select="requests/request_for_display">
+                                    <xsl:for-each select="notification_data/out_of_institution_requests/request_for_display">
                                         <tr>
                                             <td><xsl:value-of select="phys_item_display/title"/></td>
                                             <td><xsl:value-of select="phys_item_display/author"/></td>
+                                            <td><xsl:value-of select="phys_item_display/call_number"/></td>
                                             <td><xsl:value-of select="request/assigned_unit_name"/></td>
                                             <td><xsl:value-of select="request/work_flow_entity/expiration_date"/></td>
                                         </tr>
@@ -102,6 +104,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                     <tr>
                                         <th>@@title@@</th>
                                         <th>@@author@@</th>
+                                        <th>@@call_number@@</th>
                                         <th>@@can_picked_at@@</th>
                                         <th>@@note_item_held_until@@</th>
                                     </tr>
@@ -110,6 +113,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                         <tr>
                                             <td><xsl:value-of select="phys_item_display/title"/></td>
                                             <td><xsl:value-of select="phys_item_display/author"/></td>
+                                            <td><xsl:value-of select="phys_item_display/call_number"/></td>
                                             <td><xsl:value-of select="request/assigned_unit_name"/></td>
                                             <td><xsl:value-of select="request/work_flow_entity/expiration_date"/></td>
                                         </tr>
