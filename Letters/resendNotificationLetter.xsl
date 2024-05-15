@@ -39,8 +39,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
         <div class="messageArea">
-	
-		          <div class="messageBody">
+			<div class="messageBody">
 						<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 							<tr>
 								<td>
@@ -48,24 +47,38 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 								</td>
 							</tr>
 						</table>
+					<!--	<table role='presentation' > -->
+					<!--	<tr> -->
+					<!--	<td>@@sincerely@@</td> -->
+					<!--	</tr> -->
+					<!--	<tr> -->
+					<!--	<td>@@from@@</td> -->
+					<!--	</tr> -->
+					<!--	</table> -->
+					<!--	<br /> -->
 
-						<br />
-						<br />
-						<table role='presentation' >
-							<tr>
-								<td>@@sincerely@@</td>
-							</tr>
-							<tr>
-								<td>@@from@@</td>
-							</tr>
-						</table>
-						<br />
-					</div>
-				</div>
+				<br />
+
+	  	</div>
+</div>				
+				
+		
 	  <!-- footer.xsl -->
 	    <!-- xsl:call-template name="reachoutSalutation" -->
-	    <xsl:call-template name="attentionSalutation" />
+	    <!-- <xsl:call-template name="attentionSalutation" /> -->
 	    <xsl:call-template name="salutation" />
+	    <br />
+	    				<table role='presentation' >
+					<xsl:if test="notification_data/file_name !=''">
+						<tr>
+							<td>
+								<strong> @@file_name@@  </strong>
+								<xsl:value-of select="notification_data/file_name" />
+							</td>
+						</tr>
+					</xsl:if>
+				</table>
+				<br />
 	    <xsl:call-template name="last1Footer" />
 	    <xsl:call-template name="last2Footer" />
 
