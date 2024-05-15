@@ -14,32 +14,30 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:variable name="isDeposit" select="/notification_data/request/deposit_indicator" />
   <xsl:variable name="isDigitalDocDelivery" select="/notification_data/digital_document_delivery" />
 
-  <xsl:template match="/">
+<xsl:template match="/">
     <html>
-			<xsl:if test="notification_data/languages/string">
-				<xsl:attribute name="lang">
-					<xsl:value-of select="notification_data/languages/string"/>
-				</xsl:attribute>
-			</xsl:if>
+        <xsl:if test="notification_data/languages/string">
+            <xsl:attribute name="lang">
+                <xsl:value-of select="notification_data/languages/string"/>
+            </xsl:attribute>
+        </xsl:if>
 
-      <head>
-				<title>
-					<xsl:value-of select="notification_data/general_data/subject"/>
-				</title>
-
-        <xsl:call-template name="generalStyle" />
-      </head>
-      <body>
-        <xsl:attribute name="style">
-          <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
-        </xsl:attribute>
-
-        <xsl:call-template name="head" /><!-- header.xsl -->
-
-		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
+        <head>
+            <title>
+                <xsl:value-of select="notification_data/general_data/subject"/>
+            </title>
+            <xsl:call-template name="generalStyle" />
+        </head>
+        <body>
+            <xsl:attribute name="style">
+                <xsl:call-template name="bodyStyleCss" /><!-- style.xsl -->
+            </xsl:attribute>
+            <xsl:call-template name="head" /><!-- header.xsl -->
+            <xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
 
         <div class="messageArea">
-		          <div class="messageBody">
+            <div class="messageBody">
+                
 					<table role='presentation'  cellspacing="0" cellpadding="5" border="0">
 		              <tr>
 		              	<td>
@@ -79,14 +77,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 					</table>
 		          </div>
 				</div>
-	  <!-- footer.xsl -->
-	    <!-- xsl:call-template name="reachoutSalutation" -->
-	    <xsl:call-template name="attentionSalutation" />
-	    <xsl:call-template name="salutation" />
-	    <xsl:call-template name="last1Footer" />
-	    <xsl:call-template name="last2Footer" />
-
-      </body>
+            <!-- footer.xsl -->
+            <!-- <xsl:call-template name="reachoutSalutation" /> -->
+            <!--<xsl:call-template name="attentionSalutation" /> -->
+            <xsl:call-template name="salutation" />
+            <xsl:call-template name="last1Footer" />
+            <xsl:call-template name="last2Footer" />
+        </body>
     </html>
-  </xsl:template>
+</xsl:template>
 </xsl:stylesheet>
