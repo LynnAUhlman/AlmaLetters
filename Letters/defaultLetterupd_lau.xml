@@ -1377,7 +1377,7 @@
 						<accession_number/>
 						<alternative_call_number/>
 						<author>Name, Author</author>
-						<barcode>123456789</barcode>
+						<barcode>978654123 B4</barcode>
 						<booking_request_id/>
 						<calculated_due_date/>
 						<call_number/>
@@ -1435,7 +1435,7 @@
 							<arrival_date/>
 							<arrival_operator/>
 							<author>Author, Name</author>
-							<barcode>1234567890-</barcode>
+							<barcode>978654123 B5</barcode>
 							<base_status>0</base_status>
 							<call_number/>
 							<call_number_type>0</call_number_type>
@@ -1546,7 +1546,7 @@
 						<shortened_due_date_reason>Patron card expires before due date</shortened_due_date_reason>
 						<source_institution_id/>
 						<source_institution_name/>
-						<title>The Title</title>
+						<title>The Resource Sharing Title</title>
 						<user/>
 						<user_expired>false</user_expired>
 						<user_group>STAFF</user_group>
@@ -1570,10 +1570,10 @@
 						<accession_number/>
 						<alt_call_number_type/>
 						<attachments/>
-						<author>Calhoun, Aram J. K., editor; Hunter, Malcolm L., Jr., 1952- editor; Redford, Kent H., 1955- editor; Zamfirescu, Laura, photographer</author>
+						<author>Vang, Mai Der, 1981- author</author>
 						<available_items>
 							<available_item>
-								<barcode>1234567890</barcode>
+								<barcode>978654123 B7</barcode>
 								<call_number/>
 								<inventory_number/>
 								<item_policy/>
@@ -1586,7 +1586,7 @@
 								<shelving_location/>
 							</available_item>
 						</available_items>
-						<barcode>1234567890</barcode>
+						<barcode>978654123 B8</barcode>
 						<call_number/>
 						<call_number_type>0</call_number_type>
 						<chron_i/>
@@ -1674,8 +1674,8 @@
 						<statistics_note3/>
 						<summary_holding_infos/>
 						<suppressed>false</suppressed>
-						<title>The Title</title>
-						<title_abcnph>The title</title_abcnph>
+						<title>Yellow rain : poems</title>
+						<title_abcnph>Yellow rain : poems</title_abcnph>
 					</physical_item_display_for_printing>
 					<total_fines_amount>0.00</total_fines_amount>
 				</overdue_and_lost_loan_notification_display>
@@ -1901,20 +1901,20 @@
     <all_previous_locations_used>false</all_previous_locations_used>
     <approval_entity></approval_entity>
     <approval_management>PARALLEL</approval_management>
-    <assigned_unit_name>UMaine</assigned_unit_name>
-    <author>Calhoun, Aram J. K., editor; Hunter, Malcolm L., Jr., 1952- editor; Redford, Kent H., 1955- editor; Zamfirescu, Laura, photographer</author>
-    <author_display></author_display>
+    <assigned_unit_name>Law Library - Ful Circ Desk</assigned_unit_name>
+    <author>Ḥārithī, Jūkhah, author; Booth, Marilyn, translator</author>
+    <author_display>Ḥārithī, Jūkhah, author</author_display>
     <booking_resolution>MINUTES</booking_resolution>
     <bulk_request>false</bulk_request>
-    <calculated_destination_name>UMF Farmington</calculated_destination_name>
-    <cancel_reason>Not on shelf</cancel_reason>
+    <calculated_destination_name>Main College - LIB_Digit_Dept</calculated_destination_name>
+    <cancel_reason></cancel_reason>
     <cause_for_recalled_item>false</cause_for_recalled_item>
     <chapter_article_author></chapter_article_author>
     <chapter_article_title></chapter_article_title>
     <convertable_to_resource_sharing>true</convertable_to_resource_sharing>
     <copyright_declaration_signed>false</copyright_declaration_signed>
     <copyright_source></copyright_source>
-    <create_date>05/01/2024</create_date>
+    <create_date>12/11/2019</create_date>
     <create_date_str>01/25/2022</create_date_str>
     <create_time>16:40:25 PM IST</create_time>
     <date_available_from></date_available_from>
@@ -2020,11 +2020,11 @@
       <issn_list></issn_list>
       <issn_list></issn_list>
       <location_and_access></location_and_access>
-      <titles></titles>
+      <titles>Bitter orange tree</titles>
       <titles></titles>
       <accession_number></accession_number>
       <alternate_titles></alternate_titles>
-      <author>12111637635_MoveItems5Author</author>
+      <author>Ḥārithī, Jūkhah, author; Booth, Marilyn, translator</author>
       <author_list>
         <string>12111637635_MoveItems5Author</string>
       </author_list>
@@ -2181,7 +2181,7 @@
             <title>
               <value>
                 <operational_fld>
-                  <name>Crash from Outer Space : Unraveling the Mystery of Flying Saucers, Alien Beings, and Roswell</name>
+                  <name>title</name>
                   <value>12111637635_MoveItems5</value>
                 </operational_fld>
               </value>
@@ -2443,7 +2443,7 @@
       <subjects_list_reversed></subjects_list_reversed>
       <summary_holding_list></summary_holding_list>
       <terms_use_repro></terms_use_repro>
-      <title>12111637635_MoveItems5</title>
+      <title>To designate the National Pulse Memorial located at 1912 South Orange Avenue, Orlando, Florida, 32806, and for other purposes : report (to accompany H.R. 3094) (including cost estimate of the Congressional Budget Office)</title>
       <title_abcnph>12111637635_MoveItems5</title_abcnph>
       <type_of_date>s</type_of_date>
       <type_of_record></type_of_record>
@@ -2475,7 +2475,7 @@
     <status_note>RequestedMaterialCannotBeLocated</status_note>
     <status_note_display>Requested material cannot be located</status_note_display>
     <system_notes></system_notes>
-    <title>The handbook of international higher education /</title>
+    <title>Bitter orange tree A</title>
     <title_display></title_display>
     <total_chapters_count></total_chapters_count>
     <user_group>STAFF</user_group>
@@ -2492,12 +2492,12 @@
     <volume></volume>
     <volume_issue></volume_issue>
     <work_flow_entity>
-      <action_date>05/01/2024</action_date>
+      <action_date>12/11/2019</action_date>
       <assigned_unit_id>15491227620000123</assigned_unit_id>
       <assigned_unit_type>CIRCULATION_DESK</assigned_unit_type>
       <calculated_destination_id>15956595130000123</calculated_destination_id>
       <calculated_destination_type>SERVICE_UNIT</calculated_destination_type>
-      <create_date>05/01/2024</create_date>
+      <create_date>12/11/2019</create_date>
       <destination_institution_code></destination_institution_code>
       <entity_action></entity_action>
       <estimated_arrival_date>14/11/2019</estimated_arrival_date>
@@ -2846,7 +2846,7 @@
       <accession_number></accession_number>
       <alternative_call_number></alternative_call_number>
       <author>Calhoun, Aram J. K., editor; Hunter, Malcolm L., Jr., 1952- editor; Redford, Kent H., 1955- editor; Zamfirescu, Laura, photographer</author>
-      <barcode>The Title </barcode>
+      <barcode>978654123 B1</barcode>
       <booking_request_id></booking_request_id>
       <calculated_due_date></calculated_due_date>
       <call_number></call_number>
@@ -2889,7 +2889,7 @@
       <need_to_create_user_demerit>false</need_to_create_user_demerit>
       <new_due_date_str>06/12/2019 12:00:00 PM IST</new_due_date_str>
       <next_step></next_step>
-      <normalized_barcode>The Title </normalized_barcode>
+      <normalized_barcode>978654123 B2</normalized_barcode>
       <normalized_fine></normalized_fine>
       <notified_by_profiles></notified_by_profiles>
       <old_due_date>05/12/2019</old_due_date>
@@ -2903,8 +2903,8 @@
         <alternative_call_number_type></alternative_call_number_type>
         <arrival_date></arrival_date>
         <arrival_operator></arrival_operator>
-        <author>The Title Author</author>
-        <barcode>The Title </barcode>
+        <author>Curtis, Amy Stacey, 1970- editor Author</author>
+        <barcode>978654123 B3</barcode>
         <base_status>0</base_status>
         <call_number></call_number>
         <call_number_type>0</call_number_type>
@@ -2993,8 +2993,8 @@
         <temporary_library></temporary_library>
         <temporary_location_code></temporary_location_code>
         <temporary_physical_location_in_use>false</temporary_physical_location_in_use>
-        <title>The big fix : 7 practical steps to save our planet</title>
-        <title_abcnph>The big fix : 7 practical steps to save our planet </title_abcnph>
+        <title>The color of memory</title>
+        <title_abcnph>The color of memory</title_abcnph>
         <version_date>02/12/2024</version_date>
         <weeding_date></weeding_date>
         <weeding_number></weeding_number>
@@ -3040,7 +3040,7 @@
       <accession_number></accession_number>
       <alternative_call_number></alternative_call_number>
       <author>Name, Aut</author>
-      <barcode>1234567890</barcode>
+      <barcode>978654123 B9</barcode>
       <booking_request_id></booking_request_id>
       <calculated_due_date></calculated_due_date>
       <call_number></call_number>
@@ -3098,7 +3098,7 @@
         <arrival_date></arrival_date>
         <arrival_operator></arrival_operator>
         <author>Name, Aut</author>
-        <barcode>1234567890</barcode>
+        <barcode>978654123 B10</barcode>
         <base_status>1</base_status>
         <call_number></call_number>
         <call_number_type>0</call_number_type>
@@ -3382,7 +3382,7 @@
     <accession_number></accession_number>
     <alternative_call_number></alternative_call_number>
     <author>Name, Author</author>
-    <barcode>1234567890</barcode>
+    <barcode>978654123 B11</barcode>
     <booking_request_id></booking_request_id>
     <calculated_due_date></calculated_due_date>
     <call_number></call_number>
@@ -3440,7 +3440,7 @@
       <arrival_date></arrival_date>
       <arrival_operator></arrival_operator>
       <author>Name, Author</author>
-      <barcode>1234567890</barcode>
+      <barcode>978654123 B12</barcode>
       <base_status>0</base_status>
       <call_number></call_number>
       <call_number_type>0</call_number_type>
@@ -4244,7 +4244,7 @@
         <accession_number></accession_number>
         <alternative_call_number></alternative_call_number>
         <author>01121651232LostPaid1Author</author>
-        <barcode>01121651232LostPaid1</barcode>
+        <barcode>978654123 B13LostPaid1</barcode>
         <booking_request_id></booking_request_id>
         <calculated_due_date></calculated_due_date>
         <call_number></call_number>
@@ -4302,7 +4302,7 @@
           <arrival_date></arrival_date>
           <arrival_operator></arrival_operator>
           <author>01121651232LostPaid1Author</author>
-          <barcode>01121651232LostPaid1</barcode>
+          <barcode>978654123 B14LostPaid1</barcode>
           <base_status>0</base_status>
           <call_number></call_number>
           <call_number_type>0</call_number_type>
@@ -4438,7 +4438,7 @@
         <author>01121651232LostPaid1Author</author>
         <available_items>
           <available_item>
-            <barcode>01121651232LostPaid1</barcode>
+            <barcode>978654123 B15LostPaid1</barcode>
             <call_number></call_number>
             <inventory_number></inventory_number>
             <item_policy></item_policy>
@@ -4451,7 +4451,7 @@
             <shelving_location></shelving_location>
           </available_item>
         </available_items>
-        <barcode>01121651232LostPaid1</barcode>
+        <barcode>978654123 B16LostPaid1</barcode>
         <call_number></call_number>
         <call_number_type>0</call_number_type>
         <chron_i></chron_i>
@@ -4570,7 +4570,7 @@
 						<accession_number/>
 						<alternative_call_number/>
 						<author>Christen, Lesley.</author>
-						<barcode>1241234123</barcode>
+						<barcode>978654123 B17</barcode>
 						<booking_request_id/>
 						<calculated_due_date/>
 						<call_number>cccccnnnn</call_number>
@@ -4643,7 +4643,7 @@
 							<arrival_date/>
 							<arrival_operator/>
 							<author>Christen, Lesley.</author>
-							<barcode>39031022101737</barcode>
+							<barcode>978654123 B18</barcode>
 							<base_status>0</base_status>
 							<call_number>PN2075 .C48x 1993</call_number>
 							<call_number_type>0</call_number_type>
@@ -4783,7 +4783,7 @@
 						<author>Christen, Lesley.</author>
 						<available_items>
 							<available_item>
-								<barcode>39031022101737</barcode>
+								<barcode>978654123 B19</barcode>
 								<call_number>PN2075 .C48x 1993</call_number>
 								<inventory_number>AEQ2632</inventory_number>
 								<item_policy>01</item_policy>
@@ -4796,7 +4796,7 @@
 								<shelving_location/>
 							</available_item>
 						</available_items>
-						<barcode>39031022101737</barcode>
+						<barcode>978654123 B20</barcode>
 						<call_number>PN2075 .C48x 1993</call_number>
 						<call_number_type>0</call_number_type>
 						<chron_i/>
@@ -5268,7 +5268,7 @@
       <year_ui></year_ui>
     </arrival_date>
     <arrival_date_cal>01/01/1970</arrival_date_cal>
-    <barcode>02121400602</barcode>
+    <barcode>978654123 B21</barcode>
     <call_number></call_number>
     <expected_arrival_date>02/12/2019</expected_arrival_date>
     <expected_arrival_date_dummy>
@@ -5561,14 +5561,14 @@
               <zitem_list>
                 <item>
                   <accession_number></accession_number>
-                  <barcode>BC3456</barcode>
+                  <barcode>978654123 B21</barcode>
                   <call_number></call_number>
                   <item_policy></item_policy>
                   <item_policy_description></item_policy_description>
                 </item>
                 <item>
                   <accession_number></accession_number>
-                  <barcode>BC3457</barcode>
+                  <barcode>978654123 B22</barcode>
                   <call_number></call_number>
                   <item_policy></item_policy>
                   <item_policy_description></item_policy_description>
@@ -7060,7 +7060,7 @@
     <alternative_call_number_type></alternative_call_number_type>
     <arrival_date>02/12/2019</arrival_date>
     <arrival_operator>exl_impl</arrival_operator>
-    <barcode>BC3665</barcode>
+    <barcode>978654123 B23</barcode>
     <base_status>0</base_status>
     <call_number></call_number>
     <call_number_type>#</call_number_type>
@@ -7400,7 +7400,7 @@
   <item>
 	<available_items>
 		<available_item>
-			<barcode>39031022101737</barcode>
+			<barcode>978654123 B24</barcode>
 			<call_number>PN2075 .C48x 1993</call_number>
 			<inventory_number />
 			<item_policy />
