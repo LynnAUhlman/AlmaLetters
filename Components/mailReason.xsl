@@ -10,7 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <xsl:for-each select="notification_data">
                     <p>
                         <xsl:attribute name="style">
-                            display:block; font-size:1.17em;
+                           font-size:1em;
                         </xsl:attribute>
                         @@dear@@ &#160;
                     </p>
