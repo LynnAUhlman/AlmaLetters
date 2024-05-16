@@ -28,15 +28,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<xsl:attribute name="style">
 				<xsl:call-template name="bodyStyleCss" /> <!-- style.xsl -->
 			</xsl:attribute>
-				<xsl:call-template name="head" /> <!-- header.xsl -->
+				<xsl:call-template name="headStaff" /> <!-- header.xsl -->
+				<!--<xsl:call-template name="toWhomIsConcerned" /> --> <!-- mailReason.xsl -->
 
 				<div class="messageArea">
 					<div class="messageBody">
 					 <table role='presentation'  cellspacing="0" cellpadding="5" border="0">
+
 <tr>
 							<td>
 								<p>Please pull the following reading list material: </p>
-								<xsl:value-of select="notification_data/course/code"/>
 							</td>
 						</tr>
 
@@ -47,7 +48,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 								<xsl:value-of select="notification_data/course/code"/>
 							</td>
 						</tr>
-
+						<tr>
+							<td>
+								<strong>Instructor: </strong>
+								<xsl:value-of select="notification_data/course/id3"/>
+                            </td>
+						</tr>
+						
 						<tr>
 							<td>
 								<strong>@@course_name@@: </strong>
