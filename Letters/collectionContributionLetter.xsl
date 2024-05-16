@@ -67,15 +67,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 						<tr><td><br />&#160;@@mailMessage@@</td></tr>
 					</table>
+					<br />
 				</div>
 			</div>
 			<table role='presentation'>
 				<tr><td>@@sincerely@@</td></tr>
+				<tr><td>Resource Management Staff</td></tr>
+
 			</table>
             <!-- footer.xsl -->
             <!-- <xsl:call-template name="reachoutSalutation"/> -->
-           <!-- <xsl:call-template name="attentionSalutation" /> -->
-            <xsl:call-template name="salutation" />
+            <!-- <xsl:call-template name="attentionSalutation" /> -->
+            <!-- <xsl:call-template name="salutation" /> -->
             <br />
             <xsl:call-template name="last1Footer" />
             <!-- <xsl:call-template name="last2Footer" /> -->
