@@ -36,10 +36,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
         <xsl:call-template name="head" /><!-- header.xsl -->
 
-		<xsl:call-template name="toWhomIsConcerned" /> <!-- mailReason.xsl -->
+		 <xsl:call-template name="toWhomIsConcerned" />  <!-- mailReason.xsl -->
+
 
         <div class="messageArea">
-				<div class="messageBody">
+		<div class="messageBody">
 					 <table cellspacing="0" cellpadding="5" border="0">
 
 						<tr>
@@ -50,13 +51,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						</tr>
 
 					</table>
+					<br />
 				</div>
 			</div>
-
-	  <!-- footer.xsl -->
-	    <!-- xsl:call-template name="reachoutSalutation" -->
-	    <xsl:call-template name="attentionSalutation" />
-	    <xsl:call-template name="salutation" />
+	         <!-- footer.xsl -->
+	         <!-- xsl:call-template name="reachoutSalutation" -->
+	         <!-- <xsl:call-template name="attentionSalutation" -->
+        <xsl:call-template name="salutation" />
+        <br />
 	    <xsl:call-template name="last1Footer" />
 	    <xsl:call-template name="last2Footer" />
 
