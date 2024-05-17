@@ -210,7 +210,7 @@
   <general_data>
     <address_c>;</address_c>
     <address_c>;</address_c>
-    <address_from>umfmantorlibrary-group@SCRUBBED_maine.edu1</address_from>
+    <address_from>umffakeemail@SCRUBBED_maine.edu1</address_from>
     <current_date>05/13/2024</current_date>
     <current_time>10:18:23 EDT</current_time>
     <letter_channel_info></letter_channel_info>
@@ -229,7 +229,7 @@
   <letter_params>
     <address_c></address_c>
     <address_cc></address_cc>
-    <address_from>umfmantorlibrary-group@SCRUBBED_maine.edu2</address_from>
+    <address_from>umffakeemail@SCRUBBED_maine.edu1</address_from>
     <letter_name>The Letter Name</letter_name>
     <subject>The letter subject</subject>
   </letter_params>
@@ -548,7 +548,7 @@
         <code>AutoFul</code>
         <create_date>31/03/2015</create_date>
         <description>A printer for Automatic tests</description>
-        <email>grady.smith@maine.edu</email>
+        <email>grady.smithfakeemail@maine.edu</email>
         <entity_action></entity_action>
         <library_id>31589510000123</library_id>
         <library_unit_id></library_unit_id>
@@ -998,7 +998,7 @@
       <user_email>
         <create_date>05/01/2024</create_date>
         <description></description>
-        <email>grady.smith@maine.edu</email>
+        <email>grady.smithfakeemail@maine.edu</email>
         <entity_action></entity_action>
         <esploro_display_email></esploro_display_email>
         <external_id></external_id>
@@ -2646,7 +2646,7 @@
         <email>
           <create_date>02/25/2024</create_date>
           <description></description>
-          <email>umfmantorlibrary-group@SCRUBBED_maine.edu</email>
+          <email>umffakeemail@SCRUBBED_maine.edu</email>
           <entity_action></entity_action>
           <esploro_display_email></esploro_display_email>
           <external_id></external_id>
@@ -5262,7 +5262,7 @@
 	<create_date_allow_null></create_date_allow_null>
 	<created_by_user></created_by_user>
 	<description></description>
-	<email>grady.smith@maine.edu</email>
+	<email>grady.smithfakeemail@maine.edu</email>
 	<entity_action></entity_action>
 	<esploro_display_email></esploro_display_email>
 	<external_id></external_id>
