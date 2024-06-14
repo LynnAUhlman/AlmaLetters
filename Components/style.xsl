@@ -27,11 +27,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="mainTableStyleCss">
     width:100%;
-    color: ffffff;
+    color: 000000;
     text-align:left;
-    margin-top:0em;
+    margin:0 0 0 0;
     padding: 0; <!-- Remove padding -->
+</xsl:template>
 
+    
+<xsl:template name="bodyTableStyleCss">
+    width:100%;
+    color: 000000;
+    text-align:left;
+    margin:0 0 0 0;
+    padding: 0; <!-- Remove padding -->    
 </xsl:template>
 
 <xsl:template name="headerLogoStyleCss">
