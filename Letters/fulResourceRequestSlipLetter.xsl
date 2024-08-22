@@ -97,7 +97,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <td><h3><strong>@@location@@:</strong> <xsl:value-of select="notification_data/phys_item_display/location_name"/></h3></td>
             </tr>
             <tr>
-                <td><strong>@@item_barcode@@: </strong><img src="cid:item_id_barcode.png" alt="Item Barcode"/></td>
+                <td><h3><strong>@@item_barcode@@:</strong><img src="cid:item_id_barcode.png" alt="Item Barcode"/> </h3></td>
             </tr>
 
             <tr>
