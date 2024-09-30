@@ -33,21 +33,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<table role='presentation'  cellspacing="0" cellpadding="0" border="0" margin="0">
 				<tr>
 				<td>
-					<p>@@inform_loaned_items@@ <xsl:value-of select="notification_data/organization_unit/name" />&#44;&#160;<xsl:value-of select="notification_data/circ_desk_name"/>.</p>
+					<p>@@inform_loaned_items@@ <xsl:value-of select="notification_data/organization_unit/name" />.</p>
 				</td>
 				</tr>
 				</table>
 				
 				<div class="messageArea">
 					<div class="messageBody">
-
-						<table role='presentation'  cellspacing="0" cellpadding="0" border="0" margin="0">
-				<tr>
-				<td>
-					<p>@@inform_loaned_items@@ <xsl:value-of select="notification_data/organization_unit/name" />&#44;&#160;<xsl:value-of select="notification_data/circ_desk_name"/>.</p>
-				</td>
-				</tr>
-				</table>
 
               	<xsl:for-each select="notification_data/loans_by_library/library_loans_for_display">
 					<tr>
@@ -84,6 +76,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 						</td>
 					</tr>
 				</xsl:for-each>
+				<br />
 
         <!--<table role='presentation' > -->
         <!--<tr><td>@@sincerely@@</td></tr> -->
