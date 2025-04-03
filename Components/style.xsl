@@ -49,8 +49,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="feeTableStyleCss">
   width: 50%;
-  border: 1px solid #ccc;
-  border-collapse: collapse;
+  color: 000000;
+  text-align:left;
+  margin:0 0 0 0;
+  padding: 0; <!-- Remove padding -->    
 </xsl:template>
 
 
