@@ -8,20 +8,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         .listing td {border-bottom: 1px solid #eee}
         .listing tr:hover td {background-color:#eee}
         .listing th {background-color:#eee }
+        margin:0 0 0 0;
     </style>
 </xsl:template>
 
 <xsl:template name="bodyStyleCss">
     font-family: Arial;
     color:#333;
-    margin:0;
+    margin:0 0 0 0;
     padding:0em;
     font-size:100%;
+    height: 100px;
+    padding:1%;
+    border:none;
+}
 </xsl:template>
 
 <xsl:template name="listStyleCss">
     list-style: none;
-    margin:0 0 0 1em;
+    margin:0 0 1em 0;
     padding:0;
 </xsl:template>
 
@@ -42,9 +47,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     padding: 0; <!-- Remove padding -->    
 </xsl:template>
 
+<xsl:template name="feeTableStyleCss">
+  width: 50%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+</xsl:template>
+
+
 <xsl:template name="headerLogoStyleCss">
     background-color:#ffffff;
     width:100%;
+    margin:0 0 0 0;
 </xsl:template>
 
 <xsl:template name="headerTableStyleCss">
@@ -56,6 +69,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     font-weight:700;
     line-height:2em;
     font-size:125%;
+    margin:0 0 0 0;
+
 </xsl:template>
 
 <!-- Add style for organization unit part of the footer -->
@@ -63,44 +78,36 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     background-color:#034661;
     width:100%;
     text-shadow:1px 1px 1px #333;
+    text-decoration: none;
     color:#fff;
-    margin-top:1em;
+    margin:0 0 0 0;
     font-weight:700;
     line-height:2em;
     font-size:125%;
     padding: 0; <!-- Remove padding -->
 </xsl:template>
 
-<!-- Adjust style for links of footer -->
 <xsl:template name="footer2TableStyleCss">
     background-color:#07688F;
     width:100%;
     text-shadow:1px 1px 1px #333;
+    text-decoration: none;
     color:#fff;
-    margin-top:0;
+    margin:0 0 0 0;
     font-weight:700;
     line-height:2em;
     font-size:100%;
-    padding: 0; <!-- Remove padding -->
+    padding-left: 1px; <!-- Remove padding -->
 </xsl:template>
 
 <!-- Add style for hyperlinks -->
 <xsl:template name="footer2LinkStyleCss">
     a {
-        color: #ffffff; <!-- White color for regular links -->
+        color: #ffffff; text-decoration: none; <!-- White color for regular links -->
     }
     a:visited {
-        color: #07688F; <!-- #07688F UMS approved style for visited links -->
+        color: #07688F;text-decoration: none; <!-- #07688F UMS approved style for visited links -->
     }
-</xsl:template>
-
-<!-- Add padding to the <td> elements containing the text -->
-<xsl:template name="footer2TableCellStyleCss">
-    <style>
-        .footer-cell {
-            padding-left: 10px;
-        }
-    </style>
 </xsl:template>
 
 </xsl:stylesheet>
