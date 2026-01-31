@@ -265,9 +265,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	    <!-- xsl:call-template name="attentionSalutation" -->
 	    <!-- xsl:call-template name="salutation" -->
 	    <br />
-	    <xsl:call-template name="last1Footer" />
-	    <xsl:call-template name="last2Footer" />
-
+	    <!-- xsl:call-template name="last1Footer" -->
+	    <!-- xsl:call-template name="last2Footer" -->
+        	<br/>
+            <p style="font-size:65%;">Resource Sharing Shipping Slip Letter</p>
       </body>
     </html>
   </xsl:template>
