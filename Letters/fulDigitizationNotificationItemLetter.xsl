@@ -135,7 +135,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:call-template name="salutation" />
 	    <xsl:call-template name="last1Footer" />
 	    <xsl:call-template name="last2Footer" />
-
+			<br/>
+<p style="font-size:65%;">Ful Digitization Notification Item Letter</p>
       </body>
     </html>
   </xsl:template>
