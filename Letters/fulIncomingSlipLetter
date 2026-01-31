@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:variable name="counter" select="0"/>
+
+
+<xsl:include href="header.xsl" />
+<xsl:include href="senderReceiver.xsl" />
+<xsl:include href="mailReason.xsl" />
+<xsl:include href="footer.xsl" />
+<xsl:include href="style.xsl" />
+<xsl:include href="recordTitle.xsl" />
+
+<xsl:variable name="PICKUP">
+    <xsl:value-of select="notification_data/incoming_request/borrowing_library" />                                                   
+ </xsl:variable>
+
+<xsl:variable name="pickupLibrary">
+  <xsl:value-of select="normalize-space(substring-after($PICKUP,'Pickup:'))"/>
+</xsl:variable>
+
+ <xsl:variable name="PARTNER">
+    <xsl:value-of select="notification_data/partner_name"/>
+ </xsl:variable>
+ 
+ <xsl:variable name="REQ_BAR">
+    <xsl:value-of select="notification_data/incoming_request/requested_barcode" />                                                   
+ </xsl:variable>
+
+ <xsl:variable name="METADATA">
+    <xsl:value-of select="notification_data/incoming_request/request_metadata" /> 
+ </xsl:variable>
+
+ <xsl:variable name="REQUESTED_BARCODE">
+    <xsl:value-of select='substring-before(substring-after($METADATA,"dc:barcode>"),"&lt;/dc:")'/>                                            
+ </xsl:variable>
+
+<xsl:template name="id-info">
+   <xsl:param name="line"/>
+   <xsl:variable name="first" select="substring-before($line,'//')"/>
+   <xsl:variable name="rest" select="substring-after($line,'//')"/>
+    <xsl:if test="$first = '' and $rest = '' ">
+          <!--br/-->
+      </xsl:if>
+   <xsl:if test="$rest != ''">
+       <xsl:value-of select="$rest"/><br/>
+   </xsl:if>
+   <xsl:if test="$rest = ''">
+       <xsl:value-of select="$line"/><br/>
+   </xsl:if>
+
+</xsl:template>
+
+  <xsl:template name="id-info-hdr">
+        <xsl:call-template name="id-info">
+            <xsl:with-param name="line" select="notification_data/incoming_request/external_request_id"/>
+            <xsl:with-param name="label" select="'Bibliographic Information:'"/>
+         </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="/">
+	<html>
+		<head>
+		<xsl:call-template name="generalStyle" />
+		</head>
+
+			<body>
+			<xsl:attribute name="style">
+				<xsl:call-template name="bodyStyleCss" /> <!-- style.xsl -->
+			</xsl:attribute>
+
+				<xsl:call-template name="head" /> <!-- header.xsl -->
+
+
+
+			<div class="messageArea">
+				<div class="messageBody">
+					 <table cellspacing="0" cellpadding="5" border="0">
+
+
+						<tr>
+							<td>
+								<b>@@supplied_to@@: </b>
+								<xsl:value-of select="notification_data/partner_name"/>
+							</td>
+						</tr>
+                    
+                        <tr>
+                          <td>
+                            <b>Pickup at: </b>
+                            <xsl:value-of select="$pickupLibrary"/>
+    <xsl:text> (Courier: </xsl:text>
+    <xsl:choose>
+
+    <!-- A -->
+    <xsl:when test="contains($pickupLibrary,'A B Ricker')">POR-709</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Auburn Public Library')">POR-621</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Augusta School')">POR-505</xsl:when>
+
+    <!-- B -->
+    <xsl:when test="contains($pickupLibrary,'Bailey')">POR-604</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Bangor Public Library')">BAN-401</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Bates College')">POR-623</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Baxter Mem')">POR-732</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Belfast Free Library')">POR-510</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Berwick Public Library')">POR-816</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Bethel Library')">POR-714</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Bowdoin College')">POR-706</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Brewer Public Library')">BAN-321</xsl:when>
+
+    <!-- C -->
+    <xsl:when test="contains($pickupLibrary,'Calais Free Library')">BAN-207</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Camden Public Library')">POR-512</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Central Me CC')">POR-620</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Colby College')">BAN-410</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Cumston')">POR-603</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Curtis Mem')">POR-705</xsl:when>
+
+    <!-- D–F -->
+    <xsl:when test="contains($pickupLibrary,'D. A. Hurd')">POR-815</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Dyer Library')">POR-828</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'E Dyer')">BAN-319</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Ellsworth Public Library')">BAN-309</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Falmouth Memorial')">POR-701</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Freeport Community')">POR-704</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Friend Memorial')">BAN-311</xsl:when>
+
+    <!-- G–L -->
+    <xsl:when test="contains($pickupLibrary,'Gardiner Public Library')">POR-502</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Goodall Memorial')">POR-814</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Gray Public Library')">POR-707</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Hubbard Free Library')">POR-503</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Husson University')">BAN-323</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Jesup Memorial')">BAN-306</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Kennebunk Free Library')">POR-824</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'KVCC')">BAN-411</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Lewiston')">POR-622</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Libby')">POR-829</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Liberty Library')">POR-508</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Lisbon Public Library')">POR-601</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Lithgow')">BAN-405</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Lubec Memorial')">BAN-203</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Ludden Memorial')">POR-616</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Lyman Community')">POR-811</xsl:when>
+
+    <!-- M–O -->
+    <xsl:when test="contains($pickupLibrary,'Maine College of Art')">POR-804</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Maine Maritime')">BAN-314</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Maine Medical Center')">POR-808A</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'State Law')">BAN-406A</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Maine State Library')">BAN-406</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'McArthur')">POR-827</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Mechanic Falls')">POR-710</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Merrill Memorial')">POR-703</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Millinocket')">LIN-109</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Newport Public Library')">BAN-418</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'NMCC')">LIN-104</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Northeast Harbor')">BAN-307</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Norway')">POR-711</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Old Town')">BAN-208</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Orono Public Library')">BAN-210</xsl:when>
+
+    <!-- P–Y -->
+    <xsl:when test="contains($pickupLibrary,'Paris Public Library')">POR-712</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Parsons Library')">POR-812</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Patten Free')">POR-523</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Portland PL')">POR-803</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Prince Memorial')">POR-702</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Rangeley')">POR-614</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Rice PL')">POR-819</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Rockland PL')">POR-514</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Rockport PL')">POR-513</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Rumford')">POR-617</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Scarborough')">POR-808</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Skidompha')">POR-520</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'SMCC')">POR-806</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'South Portland')">POR-805</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Southwest Harbor')">BAN-308</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'St. Josephs')">POR-729</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Stonington')">BAN-313</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Thomas Coll')">BAN-408</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Thomas Memorial')">POR-807</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Thomaston')">POR-516</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Topsham')">POR-525</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'UNE')">POR-826</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Unity Environmental')">POR-734</xsl:when>
+	<xsl:when test="contains($pickupLibrary,'Unity PL')">BAN-427</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Vassalboro')">BAN-404</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Waldoboro')">POR-517</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Walker Memorial')">POR-733</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Waterville PL')">BAN-409</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'WCCC')">BAN-206</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Wells Public Library')">POR-823</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Winslow Public Library')">BAN-403</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'Witherle')">BAN-315</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'YCCC')">POR-822</xsl:when>
+    <xsl:when test="contains($pickupLibrary,'York Public Library')">POR-820</xsl:when>
+
+    <xsl:otherwise>UNKNOWN</xsl:otherwise>
+    </xsl:choose>
+    <xsl:text>)</xsl:text>
+  </td>
+</tr>
+
+
+						<tr>
+			                <td>
+			                  <b>@@borrower_reference@@: </b>
+			                   <xsl:call-template name="id-info-hdr"/>
+			                </td>
+			              </tr>
+
+
+
+			          <tr>
+							  <td><b>@@my_id@@: </b><img src="externalId.png" alt="externalId" /></td>
+				      </tr>
+
+						<tr>
+							<td>
+								<b>@@format@@: </b>
+								<xsl:value-of select="notification_data/incoming_request/format"/>
+							</td>
+						</tr>
+
+						<xsl:if  test="notification_data/incoming_request/needed_by_dummy/full_date" >
+							<tr>
+								<td>
+									<b>@@date_needed_by@@: </b>
+									<xsl:value-of select="notification_data/incoming_request/needed_by"/>
+								</td>
+							</tr>
+						</xsl:if>
+
+						<xsl:if  test="notification_data/incoming_request/note" >
+							<tr>
+								<td>
+									<b>@@request_note@@: </b>
+									<xsl:value-of select="notification_data/incoming_request/note"/>
+								</td>
+							</tr>
+						</xsl:if>
+
+						<xsl:if  test="notification_data/incoming_request/requester_email" >
+							<tr>
+								<td>
+									<b>@@requester_email@@: </b>
+									<xsl:value-of select="notification_data/incoming_request/requester_email"/>
+								</td>
+							</tr>
+						</xsl:if>
+
+						<xsl:if  test="notification_data/assignee != ''" >
+							<tr>
+								<td>
+									<b>@@assignee@@: </b>
+									<xsl:value-of select="notification_data/assignee"/>
+								</td>
+							</tr>
+						</xsl:if>
+
+								<xsl:if test="notification_data/level_of_service !=''">
+									<tr>
+										<td>
+											<b>@@level_of_service@@: </b>
+											<xsl:value-of select="notification_data/level_of_service"/>
+										</td>
+
+									</tr>
+								</xsl:if>
+
+						<xsl:for-each select="notification_data/items/physical_item_display_for_printing">
+							<br></br>
+<xsl:variable name="BAR">
+
+
+						<xsl:value-of select="barcode" />                                                   
+						    </xsl:variable>
+
+						<xsl:variable name="LOCATION_CODE">
+						<xsl:value-of select="location_code" />                                         
+						    </xsl:variable>
+
+						   <xsl:if test="$REQUESTED_BARCODE = $BAR ">
+
+							<tr>
+							  <td><b>@@item_barcode@@: </b><img src="cid:{concat(concat('Barcode',position()),'.png')}" alt="{concat('Barcode',position())}" /></td>
+							</tr>
+
+				      <xsl:if test="issue_level_description !=''">
+					<tr>
+					  <td>
+					    <b>Description:</b><xsl:value-of select="issue_level_description"/>
+					  </td>
+					</tr>
+				      </xsl:if>
+
+							<tr>
+								<td><xsl:value-of select="title"/></td>
+							</tr>
+
+							<tr>
+								<td>
+									<b>@@library@@: </b>
+									<xsl:value-of select="library_name"/>
+								</td>
+							</tr>
+
+							<tr>
+								<td><b>@@location@@: </b><xsl:value-of select="location_name"/></td>
+							</tr>
+
+							<xsl:if  test="call_number" >
+								<tr>
+									<td><b>@@call_number@@: </b><xsl:value-of select="call_number"/></td>
+								</tr>
+							</xsl:if>
+
+							<xsl:if  test="volume" >
+								<tr>
+									<td><b>@@volume@@: </b><xsl:value-of select="volume"/></td>
+								</tr>
+							</xsl:if>
+
+						  <xsl:if  test="copy_id">
+								<tr>
+									<td><b>Copy ID:</b><xsl:value-of select="copy_id"/></td>
+								</tr>
+						  </xsl:if>
+
+							<xsl:if  test="shelving_location/string" >
+								<tr>
+									<td><b>@@shelving_location_for_item@@: </b>
+									 <xsl:for-each select="shelving_location/string">
+										<xsl:value-of select="."/>
+									 &#160;
+									 </xsl:for-each>
+									</td>
+								</tr>
+							</xsl:if>
+							
+
+				      </xsl:if>
+						</xsl:for-each>
+					</table>
+				</div>
+			</div>
+			<br/>
+<p style="font-size:65%;">Ful Incoming Slip Letter</p>
+</body>
+</html>
+
+
+	</xsl:template>
+</xsl:stylesheet>
