@@ -23,6 +23,30 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				</title>
 
 		<xsl:call-template name="generalStyle" />
+
+                <script>
+                <![CDATA[
+                    if (typeof script === 'undefined') {
+                        var script = document.createElement('script');
+
+                        script.src = 'https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/barcodes/JsBarcode.code39.min.js';
+                        script.defer = true;
+
+                        script.addEventListener('load', () => {
+                            JsBarcode('.barcode39').options({
+                                font: '"Helvetica Neue",Helvetica,Arial,sans-serif',
+                                fontSize: 16,
+                                format: 'code39',
+                                height: 34,
+                                margin: 0,
+                                width: 1
+                            }).init();
+                        });
+
+                        document.head.appendChild(script);
+                    }
+                ]]>
+                </script>
 		</head>
 
 			<body>
@@ -40,14 +64,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <td><strong>@@note_item_specified_request@@.</strong></td>
                 </tr>
             </xsl:if>
+            <tr>
+				<td><h3>@@request_id@@: </h3></td>
+				<td>
+                    <div>
+                        <svg class="barcode39">
+                            <xsl:attribute name="data-value">
+                                <xsl:value-of select="notification_data/request_id"/>
+                            </xsl:attribute>
+                        </svg>
+                    </div>
+                    </td>
+        		</tr>
             <xsl:if test="notification_data/request/manual_description != ''">
                 <tr>
                     <td><strong>@@please_note@@:</strong> @@manual_description_note@@ - <xsl:value-of select="notification_data/request/manual_description"/></td>
-                </tr>
+            </tr>
             </xsl:if>
-			<tr>
-				<td><h3>@@request_id@@: <img src="cid:request_id_barcode.png" alt="Request Barcode"/></h3></td>
-			</tr>
+
             <tr>
                 <td colspan="2" style="text-align: center;">
                     <xsl:value-of select="notification_data/incoming_request/external_request_id"/>
@@ -97,8 +131,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <td><h3><strong>@@location@@:</strong> <xsl:value-of select="notification_data/phys_item_display/location_name"/></h3></td>
             </tr>
             <tr>
-                <td><h3><strong>@@item_barcode@@:</strong><img src="cid:item_id_barcode.png" alt="Item Barcode"/> </h3></td>
-            </tr>
+
+                                <xsl:if test="notification_data/phys_item_display/optional_barcodes/string!=''">
+                                    <tr>
+                                        <th style="text-align: left;">@@item_barcode@@</th>
+                                        <td>
+                                            <svg class="barcode39">
+                                                <xsl:attribute name="data-value">
+                                                    <xsl:value-of select="notification_data/phys_item_display/optional_barcodes/string"/>
+                                                </xsl:attribute>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                </xsl:if>            </tr>
 
             <tr>
                 <xsl:if test="notification_data/phys_item_display/call_number != ''">
@@ -145,7 +190,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </table>
     </div>
 </div>
-
+			<br/>
+<p style="font-size:65%;">Ful Resource Request Slip Letter</p>
 
 </body>
 </html>
